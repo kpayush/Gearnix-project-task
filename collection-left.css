@@ -1,0 +1,957 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+     background: #f8f9fb;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+/* Body aur Main Container ko screen ke andar rakhne ke liye */
+html, body {
+    overflow-x: hidden; /* Horizontal scroll puri tarah band karne ke liye */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* Accessories banner */
+.Accessories-class {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Accessories-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    color: #666;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+body {
+    background: #f8f9fb;
+    font-family: Segoe UI, sans-serif;
+}
+
+/* Sidebar */
+/* Sidebar General Styles */
+.sidebar {
+    background: #fff;
+    font-size: 0.9rem;
+}
+
+/* Category List Styling */
+.cat-list .cat-link {
+    display: block;
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.cat-list .cat-link:hover {
+    background-color: #e2e2e2;
+    transform: translateX(5px);
+}
+
+/* Filter Headers */
+.filter-group h6 {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* Custom Scrollbar for long filter lists */
+.filter-scroll {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.filter-scroll::-webkit-scrollbar {
+    width: 4px;
+}
+.filter-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* Custom Price Range Styling */
+.custom-range::-webkit-slider-thumb {
+    background: #212529;
+}
+
+.custom-range::-moz-range-thumb {
+    background: #212529;
+}
+
+/* Checkbox Colors */
+.form-check-input:checked {
+    background-color: #212529;
+    border-color: #212529;
+}
+/* Product Card */
+.product-card {
+    position: relative; /* Ye icons ko card ke bahar jaane se rokega */
+    overflow: hidden;   /* Icons ko tabhi dikhaye jab hover ho (optional) */
+}
+/* Icons ka common container (agar hai toh) */
+.product-actions {
+    position: absolute;
+    top: 15px;      /* Card ke top se gap */
+    right: 15px;    /* Card ke right se gap */
+    display: flex;
+    flex-direction: column; /* Icons ko ek ke niche ek rakhne ke liye */
+    gap: 10px;      /* Icons ke beech ka gap */
+    z-index: 10;    /* Image ke upar dikhne ke liye */
+}
+
+/* Individual Icon Style */
+.action-icon {
+    background: #fff;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.action-icon:hover {
+    background: #ff007a; /* Pink theme color */
+    color: #fff;
+}
+
+.product-actions {
+    opacity: 0;
+    transform: translateX(20px); /* Shuruat mein thoda right mein rahenge */
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .product-actions {
+    opacity: 1;
+    transform: translateX(0); /* Hover par smooth slide-in */
+}
+.list-view .product-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.list-view .img-box {
+    width: 200px;
+}
+
+.list-view .img-box img {
+    width: 100%;
+}
+
+.list-view h6,
+.list-view .stars,
+.list-view h5 {
+    text-align: left;
+}
+
+/* Active icon */
+.view-icons span {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.view-icons .active {
+    color: #ff4bd8;
+}
+.product-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.product-card h6 {
+    margin-top: 15px;
+}
+
+.stars {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.product-card h5 {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* View Icons */
+.view-icons {
+    font-size: 20px;
+    letter-spacing: 6px;
+    cursor: pointer;
+}
+.img-box{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* ICON CONTAINER */
+.hover-icons{
+    position: absolute;
+    top: 15px;
+    right: -60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s ease;
+}
+
+/* ICON STYLE */
+.hover-icons span{
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(0,0,0,.15);
+    transition: 0.3s;
+}
+
+.hover-icons span:hover{
+    background: #000;
+    color: #fff;
+}
+
+/* SHOW ICONS ON HOVER */
+.product-card:hover .hover-icons{
+    right: 15px;
+}
+/* List View Main Styles */
+#productContainer.list-view .product-item {
+    width: 100% !important; /* Full width for list items */
+}
+
+#productContainer.list-view .product-card {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    gap: 20px;
+    height: auto;
+}
+
+/* Image Size in List View */
+#productContainer.list-view .img-box {
+    width: 180px; 
+    min-width: 180px; /* Squeeze hone se rokta hai */
+    margin: 0;
+}
+
+#productContainer.list-view .img-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Hide Description in Grid, Show in List */
+.product-desc {
+    display: none; /* Default grid mein hide */
+}
+
+#productContainer.list-view .product-desc {
+    display: block; /* List mein show */
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Button & Price Alignment */
+#productContainer.list-view .add-to-cart-btn {
+    width: fit-content;
+    margin: 10px 0 0 0;
+}
+
+/* Mobile Responsive Fix */
+@media (max-width: 576px) {
+    #productContainer.list-view .product-card {
+        flex-direction: column; /* Mobile pe wapas vertical kar sakte hain ya choti image */
+        align-items: flex-start;
+    }
+    
+    #productContainer.list-view .img-box {
+        width: 120px;
+        min-width: 120px;
+    }
+}
+/* Accessories button and text content section */
+.accessories-info{
+  background:#f7f7f7;
+}
+
+/* TAG BUTTON */
+
+.tag-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.tag-btn{
+  padding:10px 24px;
+  border:1px solid #ccc;
+  background:#fff;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:14px;
+  transition:.3s;
+}
+
+.tag-btn:hover,
+.tag-btn.active{
+  background:#111;
+  color:#fff;
+  border-color:#111;
+}
+
+/* HEADING */
+
+.accessories-title{
+  font-size:30px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+/* TEXT */
+
+.accessories-text p{
+  color:#555;
+  line-height:1.7;
+}
+
+/* SEE MORE SYSTEM */
+
+.more-text{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .6s ease;
+}
+
+.more-text.show{
+  max-height:500px;
+}
+
+.see-more-btn{
+  background:none;
+  border:none;
+  margin-top:15px;
+  font-weight:600;
+  letter-spacing:1px;
+  cursor:pointer;
+  color:#111;
+}
+
+.see-more-btn:hover{
+  color:#ff4fd8;
+}
+
+/* ==========feature section========== */
+.spacing-30{
+  margin-top:30px;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+.feature-section{
+    background:#faf9f9;
+    padding:50px 30px;
+    border-radius:20px;
+    
+}
+
+/* Hide description & button in grid */
+.product-desc,
+.add-to-cart-btn {
+    display: none;
+}
+
+/* LIST VIEW STYLE */
+.list-view .product-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.list-view .img-box {
+    width: 220px;
+}
+
+.list-view .product-desc,
+.list-view .add-to-cart-btn {
+    display: block;
+}
+
+.add-to-cart-btn {
+    background: #ff4bd8;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+/* viewd product  */
+.recent-section{
+  padding: 70px 0;
+  text-align: center;
+  background:#fff;
+}
+
+.title{
+  font-weight:700;
+  margin-bottom:40px;
+}
+
+.slider-wrapper{
+  width:100%;
+  overflow:hidden;
+}
+
+.slider-track{
+  display:flex;
+  gap:25px;
+  animation: scroll 18s linear infinite;
+}
+
+.slider-wrapper:hover .slider-track{
+  animation-play-state: paused;
+}
+
+/* Card */
+.slide-card{
+  min-width:350px;
+  background:#fff;
+  padding:25px;
+  border-radius:18px;
+  box-shadow:0 5px 18px rgba(0,0,0,.05);
+  transition:.3s;
+}
+
+.slide-card:hover{
+  transform:translateY(-5px);
+}
+
+.slide-card img{
+  width:100%;
+  height:180px;
+  object-fit:contain;
+}
+
+.slide-card h6{
+  margin-top:15px;
+  font-size:15px;
+}
+
+.slide-card h5{
+  font-weight:700;
+  margin-top:5px;
+}
+
+/* Badge */
+.badge{
+  position:absolute;
+  background:red;
+  color:#fff;
+  font-size:11px;
+  padding:4px 8px;
+  border-radius:4px;
+}
+
+/* Auto scroll animation */
+@keyframes scroll{
+  0%{ transform: translateX(0); }
+  100%{ transform: translateX(-50%); }
+}
+
+/* tag button */
+.tag-buttons a{
+    text-decoration:none;
+
+}
+.tag-btn{
+    border:1px solid #ccc;
+    background:#fff;
+    padding:10px 24px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+    transition:.3s;
+}
+
+
+/* product card grid */
+.product-card img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: contain;
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        padding: 10px;
+
+    }
+
+    .product-card img {
+        height: 140px;
+
+    }
+
+    .product-card h6 {
+        font-size: 14px;
+
+    }
+
+    .product-card h5 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .hover-icons {
+        right: 10px;
+        top: 10px;
+        gap: 5px;
+    }
+
+    .hover-icons span {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+
+    .product-desc {
+        display: none !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .list-view .product-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .list-view .img-box {
+        width: 100%;
+    }
+}
+
+
+
+.list-view .hover-icons {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    opacity: 1;
+    z-index: 10;
+}
+
+.list-view .img-box {
+    position: relative;
+    width: 250px;
+    padding: 20px;
+    background: #fff;
+    overflow: visible;
+}
+
+
+.list-view .hover-icons span {
+    width: 38px;
+    height: 38px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.list-view .hover-icons span:hover {
+    background: #ff4bd8;
+    color: #fff;
+}
+
+.list-view .product-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+    text-align: left;
+}
+
+
+@media (max-width: 768px) {
+    .list-view .product-card {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .list-view .hover-icons {
+        position: static;
+        flex-direction: row;
+        transform: none;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+.hover-icons {
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.product-card:hover .hover-icons {
+    right: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.list-view .img-box {
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    border-radius: 12px;
+    margin-right: 20px;
+    position: relative;
+    overflow: visible;
+}
+
+.list-view .img-box img {
+    max-width: 90%;
+    height: auto;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.list-view .product-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    gap: 20px;
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+
+.list-view h6,
+.list-view h5,
+.list-view .stars {
+    margin: 5px 0;
+}
+
+.list-view .product-desc {
+    display: block !important;
+    font-size: 14px;
+    color: #666;
+    max-width: 500px;
+}
+
+
+.list-view .hover-icons {
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%) scale(0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+
+.list-view .product-card:hover .hover-icons {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) scale(1);
+    right: -10px;
+}
+
+@media (max-width: 576px) {
+
+    .list-view .product-card {
+        flex-direction: column !important;
+        align-items: flex-start;
+        text-align: left;
+        padding: 15px;
+        gap: 10px;
+        width: 100%;
+    }
+
+
+    .list-view .img-box {
+        width: 100% !important;
+        height: 200px !important;
+        min-width: 100%;
+        background: #fff;
+        border-radius: 10px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .list-view .product-card img {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+    }
+
+
+    .list-view .product-desc {
+        display: -webkit-box !important;
+
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+
+    .list-view .hover-icons {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        opacity: 1;
+        /* Mobile par hamesha dikhayen */
+        visibility: visible;
+        flex-direction: column;
+        gap: 8px;
+        transform: none !important;
+    }
+
+    .list-view .hover-icons span {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 576px) {
+
+    .list-view .product-card {
+        padding: 20px;
+        position: relative;
+        min-height: 400px;
+        /* Taaki button ke liye jagah rahe */
+    }
+
+
+    .list-view .product-desc {
+        display: -webkit-box !important;
+
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+
+
+    .list-view .add-to-cart-btn {
+        width: 100%;
+        margin-top: auto;
+    }
+}
+
+/* ================= LIST VIEW BUTTON LOGIC ================= */
+
+/* 1. Default State: Button ko hide karein (Laptop & Mobile) */
+.list-view .add-to-cart-btn {
+    display: block !important; /* Button structure rahega par dikhega nahi */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px); /* Neeche se upar aane wala effect */
+    transition: all 0.3s ease-in-out;
+    background: #ff4bd8;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* 2. Hover/Tap State: Button ko show karein */
+.list-view .product-card:hover .add-to-cart-btn {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); 
+}
+
+/* ================= ICONS HOVER LOGIC ================= */
+
+/* Icons ko bhi default mein hide rakhein */
+.hover-icons {
+    opacity: 0;
+    visibility: hidden;
+    right: -20px;
+    transition: 0.3s ease;
+}
+
+.product-card:hover .hover-icons {
+    opacity: 1;
+    visibility: visible;
+    right: 15px;
+}
+
+@media (max-width: 576px) {
+    .list-view .product-card {
+        flex-direction: column !important;
+        align-items: flex-start;
+        padding-bottom: 20px;
+    }
+
+    
+    .list-view .add-to-cart-btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+   
+    .list-view .product-card:hover .hover-icons {
+        right: 10px !important;
+        top: 10px !important;
+    }
+}
+@media (max-width: 576px) {
+   
+    .list-view .hover-icons {
+        position: absolute;
+        top: 15px;
+        right: -50px; 
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    
+    .list-view .product-card:active .hover-icons,
+    .list-view .product-card:hover .hover-icons {
+        opacity: 1;
+        visibility: visible;
+        right: 15px; 
+    }
+
+   
+    .list-view .add-to-cart-btn {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: 0.3s ease;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    
+    .list-view .product-card:active .add-to-cart-btn,
+    .list-view .product-card:hover .add-to-cart-btn {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+/* Ensure 2x2 grid on mobile doesn't break */
+@media (max-width: 576px) {
+    /* When NOT in list view, make sure items are 50% width */
+    #productContainer:not(.list-view) .product-item {
+        width: 50% !important;
+        flex: 0 0 auto;
+    }
+
+    /* Fix image height for small mobile screens in 2x2 */
+    .product-card img {
+        height: 140px;
+        object-fit: contain;
+    }
+    
+    .product-card {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}

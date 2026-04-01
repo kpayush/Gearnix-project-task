@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+     background: #f8f9fb;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+html, body {
+    overflow-x: hidden; /* Horizontal scroll puri tarah band karne ke liye */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+/* Accessories banner */
+.Accessories-class {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Accessories-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    color: #666;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+/* testimonial section  */
+.testimonial-section{
+    background:#f8f9fb;
+}
+
+.testimonial-box{
+    background:#f2f2f2;
+    padding:70px;
+    border-radius:20px;
+    width: 100%;
+    margin-bottom: 80px;
+    
+}
+
+.testimonial-img{
+    width:160px;
+}
+
+.testimonial-text p{
+    font-size:20px;
+    color:#333;
+    line-height:1.8;
+   
+  
+}
+
+.quote{
+    font-size:60px;
+    color:#bbb;
+    font-weight:bold;
+}
+
+.author{
+    margin-top:20px;
+    font-weight:600;
+}
+
+.author span{
+    color:#777;
+    font-weight:400;
+}
+/* testimonial grid cvard design  */
+
+.testimonial-card{
+
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+height:100%;
+transition:0.3s;
+
+}
+
+.testimonial-card:hover{
+
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+.testimonial-card p{
+
+font-size:15px;
+color:#555;
+line-height:1.7;
+margin-bottom:25px;
+
+}
+
+.testimonial-card h6{
+
+font-weight:700;
+margin-bottom:2px;
+
+}
+
+.testimonial-card span{
+
+font-size:14px;
+color:#777;
+
+}
+.testimonial-grid{
+
+column-count:4;
+column-gap:25px;
+
+}
+
+.testimonial-card{
+
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+margin-bottom:25px;
+display:inline-block;
+width:100%;
+transition:0.3s;
+
+}
+
+.testimonial-card:hover{
+
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+.testimonial-card p{
+
+font-size:15px;
+color:#555;
+line-height:1.7;
+margin-bottom:25px;
+
+}
+
+.testimonial-card h6{
+
+font-weight:700;
+margin-bottom:2px;
+
+}
+
+.testimonial-card span{
+
+font-size:14px;
+color:#777;
+
+}
+@media(max-width:1200px){
+
+.testimonial-grid{
+column-count:3;
+}
+
+}
+
+@media(max-width:768px){
+
+.testimonial-grid{
+column-count:2;
+}
+
+}
+
+@media(max-width:576px){
+
+.testimonial-grid{
+column-count:1;
+}
+
+}

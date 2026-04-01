@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f9fb;
+
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+/* Body aur Main Container ko screen ke andar rakhne ke liye */
+html, body {
+    overflow-x: hidden; /* Horizontal scroll puri tarah band karne ke liye */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.carousel-item img {
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05); /* Hover effect like video */
+}
+
+/* Dots Styling */
+.dot {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #ccc !important;
+    border: none !important;
+    margin: 0 5px !important;
+}
+
+.dot.active {
+    background-color: #ff3e81 !important; /* Pink active dot */
+}
+
+/* Hide default arrow background */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.nav-tabs .nav-link {
+    color: #000;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #ff4757;
+    border-bottom: 2px solid #ff4757;
+}
+.border-top{
+    margin-left: 30px;
+}
+/* FEAUTURE SECTION */
+.feature-img-wrapper {
+    width: 75px;
+    height: 75px;
+    background-color: #f8f9fa; /* Light background like screenshot */
+    border-radius: 50%;
+    padding: 15px; /* Image aur border ke beech gap */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.feature-img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Hover Effect */
+.feature-img-wrapper:hover {
+    background-color: #ffeef4; /* Light pink hover */
+    transform: translateY(-5px); /* Thoda upar uthega */
+}
+
+h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    color: #222;
+}
+
+/* REVIEW SECTION */
+
+.review-card{
+background:#f7f7f7;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Rating summary */
+
+.rating-summary{
+background:#ececec;
+padding:15px;
+border-radius:6px;
+}
+
+.star{
+font-size:28px;
+color:#f4b400;
+}
+
+/* Rating bars */
+
+.rating-row{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:12px;
+}
+
+.progress{
+flex:1;
+height:6px;
+background:#e4e4e4;
+}
+
+.progress-bar{
+width:0%;
+background:#ccc;
+}
+
+/* Click review */
+
+.click-review{
+background:#ececec;
+padding:15px;
+border-radius:6px;
+}
+
+.review-stars i{
+font-size:22px;
+margin:0 3px;
+color:#333;
+}
+
+/* Right box */
+
+.no-review-box{
+background:#f7f7f7;
+height:200px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+color:#555;
+font-size:16px;
+text-align:center;
+padding:20px;
+}
+
+/* product section */
+/* Card Base Design */
+.custom-card {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    background: #fff;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Pink Border on Hover */
+.custom-card:hover {
+    border-color: #ff3e81;
+    box-shadow: 0 10px 25px rgba(255, 62, 129, 0.15);
+}
+
+/* Side Buttons Sliding Animation */
+.side-buttons {
+    position: absolute;
+    top: 20px;
+    right: -50px; /* Initially hidden */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.custom-card:hover .side-buttons {
+    right: 15px; /* Slide in to the left */
+    opacity: 1;
+}
+
+.side-buttons .btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+}
+
+.side-buttons .btn:hover {
+    background: #ff3e81;
+    color: #fff;
+    border-color: #ff3e81;
+}
+
+/* Slider Dots */
+.dot {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #ddd !important;
+    border: none !important;
+    margin: 0 6px !important;
+}
+
+.dot.active {
+    background-color: #ff3e81 !important;
+}
+
+/* Smooth Slide Animation for Carousel */
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+/* viewed products  */
+.main-img-container img {
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.img-thumbnail {
+    width: 80px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.active-thumb {
+    border-color: #ff3e81 !important;
+}
+
+.swatch {
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.swatch.active {
+    outline: 2px solid #333;
+    outline-offset: 2px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: #000;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}

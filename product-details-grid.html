@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Glide - Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="product-details-grid.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+        /* Container styling */
+        .product-gallery-section {
+            padding: 10px 0;
+        }
+
+        /* Har image ka apna alag border wala box */
+        .individual-img-box {
+            background: #fff;
+            border: 1px solid #eeeeee;
+            /* Light border like Gearnix */
+            border-radius: 4px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .individual-img-box img {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* Hover Effect for Desktop */
+        .individual-img-box:hover {
+            border-color: #ddd;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+        }
+
+        /* ================= MOBILE RESPONSIVE ================= */
+
+        @media (max-width: 767px) {
+
+            /* Mobile par gap ko handle karna */
+            .row.g-3 {
+                --bs-gutter-y: 15px;
+                /* Vertical gap between stacked images */
+            }
+
+            .individual-img-box {
+                padding: 60px;
+                /* Mobile par padding thodi kam */
+                border-radius: 0;
+                /* Agar video ki tarah sharp look chahiye */
+                border-left: none;
+                /* Optional: Edge-to-edge feel ke liye */
+                border-right: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <div class="container mt-5 mb-lg-4">
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <!-- Breadcrumb -->
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb small text-uppercase">
+                        <li class="breadcrumb-item">
+                            <a href="#" class="text-decoration-none text-dark">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active">Aurora Glide Wireless Mouse</li>
+                    </ol>
+                </nav>
+
+                <div class="product-gallery-section">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <div class="individual-img-box">
+                                <img src="images/mouse1.png" class="img-fluid" alt="product">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="individual-img-box">
+                                <img src="images/mouse2.png" class="img-fluid" alt="product">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="individual-img-box">
+                                <img src="images/mouse3.png" class="img-fluid" alt="product">
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="individual-img-box">
+                                <img src="images/mouse4.png" class="img-fluid" alt="product">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        
+
+
+        <div class="col-md-6 ps-md-5">
+
+
+            <h1 class="fw-bold h2">Aurora Glide Wireless Mouse</h1>
+            <div class="d-flex align-items-center mb-3">
+                <div class="text-muted small me-2">
+                    <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i>
+                </div>
+                <span class="text-muted x-small" style="font-size: 12px; letter-spacing: 1px;">VIEW ALL
+                    REVIEWS</span>
+            </div>
+
+            <h2 class="fw-bold mb-3">$211.00</h2>
+
+            <p class="text-muted small mb-4" style="line-height: 1.6;">
+                IronCaptivate with this shirt's versatile urban look that works as well at happy hour as it does in
+                the back yard. The real mother of pearl buttons and embroidered crocodile complete its elegant
+                appeal Lorem ipsum...
+            </p>
+
+            <div class="product-meta border-bottom pb-3 mb-4">
+                <div class="row mb-1">
+                    <div class="col-3 text-uppercase fw-bold small">Tags:</div>
+                    <div class="col-9 text-muted small">Gaming, Mechanical, Wire</div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col-3 text-uppercase fw-bold small">Sku:</div>
+                    <div class="col-9 text-muted small">e-1234</div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col-3 text-uppercase fw-bold small">Category:</div>
+                    <div class="col-9 text-muted small text-decoration-underline">Accessories, Gaming controllers,
+                        Keyboards, Mouse, Wire headphone, Wire mouse, Wireless headset, Wireless mouse</div>
+                </div>
+            </div>
+
+            <div class="fw-bold small text-uppercase mb-2">Quantity:</div>
+            <div class="d-flex align-items-center gap-2 mb-3">
+                <div class="input-group border" style="width: 120px;">
+                    <button class="btn btn-sm btn-light border-0" onclick="updateQty(-1)">-</button>
+                    <input type="text" id="qty" class="form-control form-control-sm text-center border-0" value="1">
+                    <button class="btn btn-sm btn-light border-0" onclick="updateQty(1)">+</button>
+                </div>
+                <button class="btn btn-dark flex-grow-1 text-uppercase fw-bold py-2" style="font-size: 13px;">Add to
+                    Bag</button>
+                <button class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 42px; height: 42px;">
+                    <i class="far fa-heart"></i>
+                </button>
+            </div>
+
+            <button class="btn btn-primary w-100 fw-bold py-2 text-uppercase mb-4"
+                style="background-color: #000; border: none;">Buy it now</button>
+
+            <div class="d-flex gap-4 border-bottom pb-4 mb-4">
+                <a href="#" class="text-decoration-none text-dark small fw-bold"><i class="fas fa-share-alt me-2"></i>
+                    SHARE</a>
+                <a href="#" class="text-decoration-none text-dark small fw-bold"><i
+                        class="far fa-question-circle me-2"></i> ASK A QUESTION</a>
+                <a href="faqs.html" class="text-decoration-none text-dark small fw-bold"><i
+                        class="fas fa-info-circle me-2"></i> FAQ</a>
+            </div>
+
+            <div class="text-center p-3 border rounded">
+                <p class="small fw-bold text-uppercase mb-3">Guaranteed Safe Checkout:</p>
+                <div class="d-flex justify-content-center gap-2 flex-wrap">
+
+                    <img src="images/payment1.png" alt="Apple Pay">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-5 border-top pt-4 ">
+        <ul class="nav nav-tabs border-0 justify-content-start" id="myTab">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab"
+                    data-bs-target="#desc">Description</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#delivery">Delivery
+                    Policy</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#returns">Shipping &
+                    Return</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#custom">Custom
+                    Tab</button></li>
+        </ul>
+        <div class="tab-content p-3 border">
+            <div class="tab-pane fade show active" id="desc">
+                <p class="text-muted small mb-4" style="line-height: 1.6;">
+                    IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                    in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                    elegant appeal.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    ridicu lus mus. Donec quam felis, ultri cies nec, pellentesque eu, pretium quis, sem. Nulla
+                    consequat massa quis enim.
+                </p>
+                <h5 class="text-muted  mt-2 fw-bold" style="color: #000;">Sample Ordered Lista</h5>
+                <ul class="list-group list-group-numbered mt-2">
+                    <li>Comodous in tempor ullamcorper miaculis</li>
+                    <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+                    <li>Divamus sit amet purus justo.</li>
+                    <li>Proin molestie egestas orci ac suscipit risus posuere loremous
+                    </li>
+                </ul>
+
+                <h5 class="text-muted  mt-2 fw-bold" style="color: #000;">Sample Paragraph Text</h5>
+                <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit.
+                    Accessorize with a straw hat and you're ready for summer!Faded short sleeves t-shirt with high
+                    neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and
+                    you're ready for summe!Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridicu lus mus. Donec quam felis, ultri cies nec, pellentesque eu, pretium
+                    quis, sem. Nulla consequat massa quis enim.
+
+                </p>
+
+
+            </div>
+            <div class="tab-pane fade" id="delivery">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                vulputate, lectus ac pretium maximus, magna neque fermentum arcu, ut pulvinar arcu erat vel massa.
+                Pellentesque ac arcu blandit, vestibulum tortor eget, dictum magna. Curabitur sit amet metus nulla.
+                Pellentesque et augue et urna volutpat vestibulum vitae eget ligula. Maecenas mi augue, faucibus
+                scelerisque facilisis in, dignissim vitae justo. Sed venenatis lectus et leo malesuada iaculis. Nunc
+                lacinia arcu id elementum rhoncus. Duis tempor, enim vel vulputate interdum, magna sapien lacinia
+                enim, nec lobortis quam enim eu erat. Aenean faucibus ex vitae nibh accumsan ullamcorper. Sed a orci
+                augue. Maecenas porttitor venenatis semper.</div>
+            <div class="tab-pane fade" id="returns">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus libero quis mauris vestibulum
+                dapibus.
+
+                Maecenas ullamcorper erat mi, vel consequat enim suscipit at. Pellentesque a elit at elit
+            </div>
+            <div class="tab-pane fade" id="custom">
+                <table class="table table-striped">
+
+                    <tr>
+                        <th>Lorem ipsum dolor sit amet.</th>
+                        <th>
+                            Maecenas ullamcorper erat mi, vel consequat enim suscipit at.</th>
+                    </tr>
+
+                    <tr>
+                        <th>Quisque in felis ut tellus</th>
+                        <th>Pellentesque a elit at elit auctor tempus sed vitae mi</th>
+                    </tr>
+
+                    <tr>
+                        <th>Morbi blandit auctor</th>
+                        <th>Vestibulum sollicitudin tortor dui, quis aliquet sapien convallis sed.</th>
+                    </tr>
+                    <tr>
+                        <th>Sed sit amet risus quis velit lacinia gravida.</th>
+                        <th>Aenean interdum elementum arcu. Vivamus purus lorem, semper quis libero et.</th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Morbi dictum orci neque.
+                        </th>
+                        <th>Curabitur vehicula tellus sit amet neque placerat, vel sagittis.</th>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section py-5 border-top border-bottom">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature1.png" alt="Free Delivery" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Free Delivery</h6>
+                        <p class="text-muted small mb-0">Free shipping on all order above $200</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature3.png" alt="Support 24/7" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Support 24/7</h6>
+                        <p class="text-muted small mb-0">Contact us 24 hours a day, 7 days a week</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature4.png" alt="7 Days Return" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">7 Days Return</h6>
+                        <p class="text-muted small mb-0">Return it within 30 days for an exchange.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- REVIEW SECTION -->
+    <section class="review-section container my-5">
+
+        <div class="row g-4">
+
+            <!-- LEFT REVIEW CARD -->
+            <div class="col-lg-4 col-md-5">
+
+                <div class="review-card p-4">
+
+                    <h5 class="mb-3">Reviews</h5>
+
+                    <!-- Rating Summary -->
+                    <div class="rating-summary d-flex align-items-center mb-4">
+                        <span class="star me-2"><i class="bi bi-star-fill"></i></span>
+                        <h2 class="mb-0 me-3">0.0</h2>
+                        <span class="text-muted">0 reviews</span>
+                    </div>
+
+                    <!-- Rating Bars -->
+                    <div class="rating-bars">
+
+                        <div class="rating-row">
+                            <span>5</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>4</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>3</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>2</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>1</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Click Review -->
+                    <div class="click-review text-center mt-4">
+                        <p class="mb-2">Click to review</p>
+                        <div class="review-stars">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT REVIEW MESSAGE -->
+
+            <div class="col-lg-8 col-md-7">
+
+                <div class="no-review-box d-flex align-items-center justify-content-center">
+                    No reviews yet, lead the way and share your thoughts
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- product section  -->
+
+    <div class="container my-5">
+        <h2 class="text-center fw-bold mb-5" style="letter-spacing: 2px;">PRODUCT RELATED</h2>
+
+        <div id="productSlider" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row g-4">
+                        <!-- card 1 -->
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/key1.png" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Aurora Sentinel</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$137.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/head3.png" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn"><i class="bi bi-star"></i></button>
+                                        <button class="btn"><i class="bi bi-bag"></i></button>
+                                        <button class="btn"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Black vipex</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$625.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/gc1.png" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">box6 gaming nexus</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$192.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 4  -->
+
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/mouse2.png" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom RGB Mouse</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$162.00</h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="carousel-item ">
+                    <div class="row g-4">
+                        <!-- card1 -->
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/key2.png" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Galaxy Striker</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$165.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/head4.webp" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn"><i class="bi bi-star"></i></button>
+                                        <button class="btn"><i class="bi bi-bag"></i></button>
+                                        <button class="btn"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Onyx predater</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$625.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/gc4.png" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite Headset</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$192.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 4  -->
+
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/mouse4.png" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite Headset pro</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$192.00</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <div class="row g-4">
+                        <!-- card1 -->
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/mouse3.png" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite Headset pro</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$189.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/gc1.png" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn"><i class="bi bi-star"></i></button>
+                                        <button class="btn"><i class="bi bi-bag"></i></button>
+                                        <button class="btn"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">PG4 Console Zephyr</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$685.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/mouse3.png" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Quntam click presicion</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$192.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 4  -->
+
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/head5.webp" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite Headset</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$192.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-indicators position-relative mt-5">
+                <button type="button" data-bs-target="#productSlider" data-bs-slide-to="0" class="active dot"></button>
+                <button type="button" data-bs-target="#productSlider" data-bs-slide-to="1" class="dot"></button>
+                <button type="button" data-bs-target="#productSlider" data-bs-slide-to="2" class="dot"></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- recently view product -->
+    <div class="container my-5">
+        <h2 class="text-center fw-bold mb-5" style="letter-spacing: 2px;">RECENTLY VIEWED PRODUCTS</h2>
+
+        <div id="productSlider" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row g-4">
+                        <!-- card1 -->
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/head5.webp" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite Headset</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$792.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/4_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn"><i class="bi bi-star"></i></button>
+                                        <button class="btn"><i class="bi bi-bag"></i></button>
+                                        <button class="btn"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">PG4 Console Zephyr</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$625.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/1_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite Headset</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$192.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 4  -->
+
+                        <div class="col-md-3">
+                            <div class="custom-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="images/head2.png" class="img-fluid">
+                                    <div class="side-buttons">
+                                        <button class="btn shadow-sm"><i class="bi bi-star"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-bag"></i></button>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite Headset</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$192.00</h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="product-details.js"></script>
+    <script src="layout.js"></script>
+</body>
+
+</html>

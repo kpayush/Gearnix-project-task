@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+   background: #f8f9fb;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Accessories banner */
+.Accessories-class {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Accessories-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    color: #666;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+/* Image */
+
+.img-class{
+    text-align:center;
+}
+
+.img-class img{
+    width:85%;
+    border-radius:25px;
+    margin-bottom:60px;
+}
+
+/* Paragraph */
+
+.paragraph{
+    width:75%;
+    margin:auto;
+    font-size:17px;
+    line-height:1.8;
+    color:#444;
+}
+
+.paragraph p{
+    margin-bottom:25px;
+}
+
+/* testimonial section  */
+.testimonial-section{
+    background:#f8f9fb;
+}
+
+.testimonial-box{
+    background:#f2f2f2;
+    padding:50px;
+    border-radius:20px;
+}
+
+.testimonial-img{
+    width:160px;
+}
+
+.testimonial-text p{
+    font-size:18px;
+    color:#333;
+    line-height:1.8;
+}
+
+.quote{
+    font-size:60px;
+    color:#bbb;
+    font-weight:bold;
+}
+
+.author{
+    margin-top:20px;
+    font-weight:600;
+}
+
+.author span{
+    color:#777;
+    font-weight:400;
+}
+
+/* WHY CHOOSE US SECTION */
+
+.why-choose-section{
+    background:#ffffff;
+}
+
+.why-title{
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.why-text{
+    font-size:17px;
+    line-height:1.8;
+    color:#555;
+}
+
+.why-img{
+    border-radius:20px;
+    width:90%;
+}
+
+.why-img img{
+    width:100%;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    /* Banner Section */
+    .Accessories-class {
+        min-height: 250px;
+        padding: 40px 15px;
+    }
+
+    .Accessories-heading {
+        font-size: 28px;
+    }
+
+    .breadcrumb {
+        font-size: 13px;
+    }
+
+    /* Main Image */
+    .img-class img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 30px;
+    }
+
+    /* Paragraph */
+    .paragraph {
+        width: 100%;
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Testimonial */
+    .testimonial-box {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .testimonial-img {
+        width: 120px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-text p {
+        font-size: 14px;
+    }
+
+    .quote {
+        font-size: 40px;
+    }
+
+    /* Why Section */
+    .why-title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .why-text {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .why-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Fix reverse order spacing */
+    .why-choose-section .row {
+        text-align: center;
+    }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 576px) {
+
+    .Accessories-heading {
+        font-size: 22px;
+    }
+
+    .paragraph {
+        font-size: 13px;
+    }
+
+    .testimonial-text p {
+        font-size: 13px;
+    }
+
+    .why-title {
+        font-size: 20px;
+    }
+
+    .why-text {
+        font-size: 13px;
+    }
+}
+/* Body aur Main Container ko screen ke andar rakhne ke liye */
+html, body {
+    overflow-x: hidden; /* Horizontal scroll puri tarah band karne ke liye */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}

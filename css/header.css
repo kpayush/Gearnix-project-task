@@ -1,0 +1,507 @@
+/* 1. Navbar height & spacing */
+.navbar {
+    min-height: 70px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff !important;
+    margin: 0 5px;
+}
+
+/* 2. Mega Menu Logic (Collections & Products) */
+.has-megamenu {
+    position: static !important;
+}
+
+.megamenu {
+    width: 100% !important;
+    left: 0;
+    right: 0;
+    margin-top: 0;
+    border-radius: 0;
+    border: none;
+    border-top: 2px solid #ff4bd8;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    display: block;
+}
+
+/* 3. Normal Dropdown Logic (Pages & Blogs) */
+.pages-dropdown,
+.blog-dropdown {
+    min-width: 250px;
+    border-radius: 15px !important;
+    padding: 20px 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    display: block;
+    margin-top: 10px !important;
+}
+
+/* 4. Combined Hover Trigger */
+@media (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 5. Menu Link Styling */
+.custom-menu-list li a,
+.dropdown-item {
+    color: #555 !important;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 8px 20px;
+    transition: 0.2s;
+}
+
+.custom-menu-list li a:hover,
+.dropdown-item:hover {
+    color: #ff4bd8 !important;
+    background: transparent;
+    padding-left: 25px;
+}
+
+/* Icons Container */
+.gap-4 {
+    gap: 1.5rem !important;
+    /* Icons ke beech ka space */
+}
+
+/* Base Icon Style */
+.icon-btn {
+    color: #ffffff;
+    /* Default color white */
+    font-size: 1.2rem;
+    /* Icon ka size */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Hover Effect (Pink Accent) */
+.icon-btn:hover {
+    color: #ff4bd8 !important;
+    /* Gaming pink color on hover */
+    transform: translateY(-3px);
+    /* Chhota sa jump effect */
+}
+
+/* Notification Badge (Pink Dot) */
+.badge-dot {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    width: 18px;
+    height: 18px;
+    background-color: #ff4bd8;
+    /* Pink dot */
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    /* Taaki dark background par alag dikhe */
+}
+
+/* FontAwesome and Bootstrap Icons Alignment */
+.icon-btn i {
+    vertical-align: middle;
+}
+
+/* 1. General Offcanvas Styling */
+.offcanvas {
+    background-color: #ffffff;
+    color: #000000;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    /* Smooth opening */
+}
+
+.offcanvas-header {
+    background-color: #fff;
+    padding: 25px !important;
+}
+
+.offcanvas-title {
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+/* 2. Cart Drawer Specific */
+#cartBadgeCount {
+    background-color: #ff4bd8 !important;
+    /* Pink badge for items */
+    font-size: 10px;
+    padding: 5px 10px;
+}
+
+/* Cart Category Buttons (Accessories, Headphones etc.) */
+.offcanvas-body .btn-outline-secondary {
+    border: 1px solid #eeeeee;
+    color: #555;
+    font-size: 14px;
+    transition: 0.3s;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.offcanvas-body .btn-outline-secondary:hover {
+    background-color: #ff4bd8;
+    border-color: #ff4bd8;
+    color: #fff;
+    padding-left: 25px;
+    /* Subtle slide effect */
+}
+
+/* 3. User Drawer (Account Menu) Styling */
+.user-menu-section ul li a {
+    font-size: 15px;
+    color: #444 !important;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.user-menu-section ul li a:hover {
+    color: #ff4bd8 !important;
+    /* Pink color on hover */
+    padding-left: 8px;
+}
+
+/* Dropdown/Select Styling in Footer */
+.form-select-sm {
+    font-size: 13px;
+    border-radius: 8px !important;
+    cursor: pointer;
+}
+
+.form-select-sm:focus {
+    border-color: #ff4bd8;
+    box-shadow: none;
+}
+
+/* 4. Social Icons Styling */
+.user-menu-content+div i {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.user-menu-content+div i:hover {
+    color: #ff4bd8 !important;
+    transform: scale(1.2);
+}
+
+/* 5. Close Button Styling */
+.btn-close:focus {
+    box-shadow: none !important;
+}
+
+/* Custom Scrollbar for Cart Items */
+#cartItemsList::-webkit-scrollbar {
+    width: 5px;
+}
+
+#cartItemsList::-webkit-scrollbar-thumb {
+    background: #eeeeee;
+    border-radius: 10px;
+}
+
+/* 1. Mobile Top Bar */
+.mobile-header {
+    background-color: #000;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.mobile-left i,
+.mobile-cart i {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-left i:first-child {
+    margin-right: 20px;
+}
+
+.mobile-logo img {
+    height: 30px;
+}
+
+.mobile-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: #ff4bd8;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* 2. Slide Menu Container */
+.mobile-slide-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* Shuru me bahar rahega */
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    z-index: 2000;
+    transition: 0.4s ease;
+    overflow-x: hidden;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-slide-menu.active {
+    left: 0;
+    /* Open hone par */
+}
+
+/* 3. Search Bar in Menu */
+.menu-search {
+    padding: 20px;
+    position: relative;
+    background: #f8f8f8;
+}
+
+.menu-search input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.menu-search i {
+    position: absolute;
+    right: 35px;
+    top: 32px;
+    color: #888;
+}
+
+/* 4. Menu List & Submenus */
+.menu-list,
+.submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li,
+.submenu ul li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu-list li a,
+.submenu ul li a {
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+}
+
+/* Submenu Slide Logic */
+.submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    /* Bahar rahega */
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: 0.4s ease;
+    z-index: 2;
+}
+
+.submenu.active {
+    left: 0;
+}
+
+.submenu-header {
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.back-btn {
+    cursor: pointer;
+}
+
+/* 5. Bottom Info */
+.menu-bottom {
+    padding: 30px 20px;
+}
+
+.menu-bottom p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.menu-social {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.menu-social a {
+    color: #000;
+    font-size: 18px;
+}
+
+/* Overlay background */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1500;
+}
+
+.menu-overlay.active {
+    display: block;
+}
+
+/* Mobile Header ko fix position de taaki ye screen par chipka rahe */
+.mobile-header {
+    position: fixed;
+    /* sticky ki jagah fixed use karein */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Mobile Slide Menu ko sabse upar rakhein */
+.mobile-slide-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100vh;
+    z-index: 2000;
+    /* Iska z-index header se double rakhein */
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+/* Overlay ko black rakhein taaki peeche ka header dhak jaye */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* Darker overlay */
+    z-index: 1500;
+    display: none;
+}
+
+.menu-overlay.active {
+    display: block;
+}
+/* Original Desktop Navbar ka Z-index kam karein */
+.navbar {
+    z-index: 1000 !important;
+}
+
+/* Mobile Header (Jo screen par dikhta hai) */
+.mobile-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050; /* Navbar se upar */
+    background: #000;
+}
+
+/* Overlay: Iska kaam hai peeche ki har cheez ko dhak dena */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85); /* Thoda aur dark karein */
+    z-index: 2000; /* Sabse upar */
+    display: none;
+    backdrop-filter: blur(5px); /* Background ko blur kar dega toh professional lagega */
+}
+
+/* Mobile Slide Menu: Ye overlay ke bhi upar hona chahiye */
+.mobile-slide-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100vh;
+    z-index: 2100; /* Overlay se bhi zyada */
+    background: #fff;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Desktop Navbar ko mobile screen (991px se niche) par hide karein */
+@media (max-width: 991.98px) {
+    nav.navbar {
+        display: none !important;
+    }
+    
+    /* Ensure mobile header is fixed at the top */
+    .mobile-header {
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1050;
+        background-color: #000;
+    }
+
+    /* Page content ko header ke niche lane ke liye padding */
+    body {
+        padding-top: 60px; /* Jitni aapke mobile header ki height hai */
+    }
+}
+
+/* Laptop/Desktop par mobile header hide rahe */
+@media (min-width: 992px) {
+    .mobile-header {
+        display: none !important;
+    }
+    nav.navbar {
+        display: flex !important;
+    }
+}

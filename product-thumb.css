@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f9fb;
+
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+html, body {
+    overflow-x: hidden; /* Horizontal scroll puri tarah band karne ke liye */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+.thumb-gallery img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.thumb-gallery img.active,
+.thumb-gallery img:hover {
+    border-color: #ff4757;
+    opacity: 0.8;
+}
+
+.nav-tabs .nav-link {
+    color: #000;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #ff4757;
+    border-bottom: 2px solid #ff4757;
+}
+
+.main-img-container {
+    background: #f9f9f9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Typography & Specific Styles */
+h1 {
+    letter-spacing: -0.5px;
+    color: #1a1a1a;
+}
+
+.breadcrumb-item,
+.breadcrumb-item a {
+    font-size: 11px;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+.product-meta .col-3 {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.product-meta .col-9 {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Button hover effects matching Earnix style */
+.btn-dark:hover {
+    background-color: #333;
+}
+
+/* Checkout box */
+.guaranteed-checkout {
+    background-color: #fcfcfc;
+}
+
+/* Small labels */
+.x-small {
+    font-size: 10px;
+}
+/* ================= Feature Section ================= */
+
+
+/* ==========feature section========== */
+.spacing-30{
+  margin-top:30px;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+.feature-section{
+    background:#faf9f9;
+    padding:50px 30px;
+    border-radius:20px;
+    
+}
+
+/* Hide description & button in grid */
+.product-desc,
+.add-to-cart-btn {
+    display: none;
+}
+
+/* REVIEW SECTION */
+
+.review-card{
+background:#f7f7f7;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Rating summary */
+
+.rating-summary{
+background:#ececec;
+padding:15px;
+border-radius:6px;
+}
+
+.star{
+font-size:28px;
+color:#f4b400;
+}
+
+/* Rating bars */
+
+.rating-row{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:12px;
+}
+
+.progress{
+flex:1;
+height:6px;
+background:#e4e4e4;
+}
+
+.progress-bar{
+width:0%;
+background:#ccc;
+}
+
+/* Click review */
+
+.click-review{
+background:#ececec;
+padding:15px;
+border-radius:6px;
+}
+
+.review-stars i{
+font-size:22px;
+margin:0 3px;
+color:#333;
+}
+
+/* Right box */
+
+.no-review-box{
+background:#f7f7f7;
+height:200px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+color:#555;
+font-size:16px;
+text-align:center;
+padding:20px;
+}
+
+
+/* Product Card */
+
+
+.product-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.product-card h6 {
+    margin-top: 15px;
+}
+
+.stars {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.product-card h5 {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* View Icons */
+.view-icons {
+    font-size: 20px;
+    letter-spacing: 6px;
+    cursor: pointer;
+}
+.img-box{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* ICON CONTAINER */
+.hover-icons{
+    position: absolute;
+    top: 15px;
+    right: -60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s ease;
+}
+
+/* ICON STYLE */
+.hover-icons span{
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(0,0,0,.15);
+    transition: 0.3s;
+}
+
+.hover-icons span:hover{
+    background: #000;
+    color: #fff;
+}
+
+/* SHOW ICONS ON HOVER */
+.product-card:hover .hover-icons{
+    right: 15px;
+}
+
+.product-card{
+background:#fff;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+text-align:center;
+}
+
+.product-card img{
+width:100%;
+}
+
+.swiper{
+padding:20px 0;
+}
+.swiper-button-next,
+.swiper-button-prev{
+color:#000;
+}
+.swiper-slide{
+height:auto;
+}
+
+.swiper-slide{
+height:auto;
+}
+
+.swiper{
+padding:20px 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+color:#000;
+}
+.productSlider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper{
+  display:flex;
+}
+.btn-dark, .btn-primary {
+    border-radius: 0px !important;
+}
+/* Swiper Pagination Dots Color */
+.swiper-pagination-bullet-active {
+    background: #ff4c9a !important; /* Video wala pink color */
+}
+
+/* Tab Active Color */
+.nav-tabs .nav-link.active {
+    color: #ff4c9a !important;
+    border-bottom: 2px solid #ff4c9a !important;
+}
+
+/* Product Meta Links */
+.product-meta .col-9 {
+    color: #666;
+    cursor: pointer;
+}
+
+.product-meta .col-9:hover {
+    color: #ff4c9a;
+}
+
+/* 1. Buttons ko sharp (square) banane ke liye - Exactly like Video */
+.btn-dark, .btn-primary {
+    border-radius: 0 !important; 
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* 2. Active Tab aur Pagination ka color Pink/Red karne ke liye */
+.nav-tabs .nav-link.active {
+    color: #ff4757 !important;
+    border-bottom: 2px solid #ff4757 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff4757 !important;
+}
+
+/* 3. Thumbnails ko center aur clean karne ke liye */
+.thumb-gallery {
+    padding-top: 10px;
+}
+
+.thumb-gallery img {
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* 4. Checkout section padding */
+.text-center.p-3.border.rounded {
+    background-color: #f9f9f9;
+    border-style: dashed !important; /* Video mein aksar dashed border hoti hai */
+}
+/* Button height matching */
+.btn-dark, .btn-primary {
+    height: 50px; /* Video mein buttons thode bade aur uniform hain */
+    font-size: 14px;
+    border-radius: 0;
+}
+
+/* Product Meta spacing */
+.product-meta {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+.product-meta .fw-bold {
+    color: #333;
+}
+
+
+.thumb-gallery img {
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+.thumb-gallery img.active {
+    border: 2px solid #000;
+}
+
+.thumb{
+cursor:pointer;
+opacity:0.6;
+transition:0.3s;
+}
+
+.thumb:hover{
+opacity:1;
+border:2px solid #000;
+}
+
+.thumb.active{
+opacity:1;
+border:2px solid #000;
+}

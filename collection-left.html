@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection-leftside</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="collection-left.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!-- Accessories banner -->
+    <div class="Accessories-class">
+        <h2 class="Accessories-heading">Accessories</h2>
+        <h4 class="breadcrumb">Home &nbsp;.&nbsp; Accessories</h4>
+    </div>
+
+    <!-- product section -->
+
+    <div class="container-fluid py-4">
+        <div class="row">
+
+            <!-- side bar -->
+            <div class="col-lg-3 sidebar-container" id="mobileSidebar"">
+
+                <div class=" sidebar p-3 border-end border-end bg-white">
+
+                <h5 class="fw-bold mb-3"><i class="bi bi-list me-2"></i>CATEGORIES</h5>
+                <ul class="list-unstyled cat-list mb-4">
+                    <li><a href="collection-top.html" class="cat-link">Headphones</a></li>
+                    <li><a href="collection-without.html" class="cat-link">Keyboards</a></li>
+                    <li><a href="collection-canvas-left.html" class="cat-link">Mouse</a></li>
+                    <li><a href="collection-left.html" class="cat-link">Accessories</a></li>
+                    <li><a href="collection-right.html" class="cat-link">Gaming Controllers</a></li>
+                    <li><a href="#" class="cat-link text-muted fw-bold">See More +</a></li>
+                </ul>
+
+                <div class="d-flex align-items-center mb-3">
+                    <h5 class="fw-bold m-0 flex-grow-1"><i class="bi bi-sliders me-2"></i>FILTER BY</h5>
+                </div>
+
+                <button class="btn btn-dark w-100 py-2 mb-4 rounded-pill clear-btn">
+                    <i class="bi bi-trash3 me-2"></i>Clear All
+                </button>
+
+                <div class="filter-group mb-4">
+                    <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                        href="#availabilityCollapse" role="button">
+                        <h6 class="fw-bold m-0"><i class="bi bi-chevron-up me-2"></i>AVAILABILITY</h6>
+                        <span class="text-muted small">RESET</span>
+                    </div>
+                    <div class="collapse show mt-3" id="availabilityCollapse">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="inStock">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="inStock">
+                                In stock <span>(16)</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="outStock">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="outStock">
+                                Out of stock <span>(0)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group mb-4 border-top pt-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h6 class="fw-bold m-0"><i class="bi bi-chevron-up me-2"></i>PRICE</h6>
+                        <span class="text-muted small">RESET</span>
+                    </div>
+                    <div class="mt-3">
+                        <input type="range" class="form-range custom-range" min="0" max="625" id="priceRange">
+                        <div class="d-flex align-items-center gap-2 mt-2">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bg-white border-end-0">$</span>
+                                <input type="number" class="form-control border-start-0 ps-0" placeholder="0">
+                            </div>
+                            <span>-</span>
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-text bg-white border-end-0">$</span>
+                                <input type="number" class="form-control border-start-0 ps-0" placeholder="625">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group border-top pt-3">
+                    <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                        href="#typeCollapse">
+                        <h6 class="fw-bold m-0"><i class="bi bi-chevron-up me-2"></i>PRODUCT TYPE</h6>
+                        <span class="text-muted small">RESET</span>
+                    </div>
+                    <div class="collapse show mt-3 filter-scroll" id="typeCollapse">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="console">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="console">
+                                Console <span>(3)</span>
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="headset">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="console">
+                                headset <span>(3)</span>
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="keyboard">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="console">
+                                Keyboard <span>(2)</span>
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="headset">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="mouse">
+                                Mouse <span>(3)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group border-top pt-3">
+                    <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                        href="#typeCollapse">
+                        <h6 class="fw-bold m-0"><i class="bi bi-chevron-up me-2"></i>More filter</h6>
+                        <span class="text-muted small">RESET</span>
+                    </div>
+                    <div class="collapse show mt-3 filter-scroll" id="typeCollapse">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="console">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="console">
+                                Console <span>(3)</span>
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="gaming">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="console">
+                                gaming<span>(3)</span>
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="headphones">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="console">
+                                headphones <span>(2)</span>
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="headset">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="headset">
+                                headsets <span>(3)</span>
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="ps4">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="headset">
+                                ps4 <span>(3)</span>
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="headset">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="ps5">
+                                ps5 <span>(3)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="filter-group border-top pt-3">
+                    <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                        href="#typeCollapse">
+                        <h6 class="fw-bold m-0"><i class="bi bi-chevron-up me-2"></i>Brand</h6>
+                        <span class="text-muted small">RESET</span>
+                    </div>
+                    <div class="collapse show mt-3 filter-scroll" id="typeCollapse">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="console">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="console">
+                                Console <span>(3)</span>
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="gaming">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="console">
+                                gaming<span>(3)</span>
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="headphones">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="console">
+                                headphones <span>(2)</span>
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="headset">
+                            <label class="form-check-label d-flex justify-content-between w-100" for="headset">
+                                headsets <span>(3)</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <button class="btn btn-dark d-lg-none mb-3" id="filterToggle">
+                <i class="bi bi-sliders me-2"></i> Filters
+            </button>
+        </div>
+
+
+        <!-- RIGHT PRODUCT GRID -->
+        <div class="col-lg-9">
+
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <p class="mb-0">Sort by <b>Featured</b></p>
+                <div class="view-icons">
+                    <span id="grid3" class="active"><i class="bi bi-grid-3x3"></i></span>
+                    <span id="grid2"><i class="bi bi-grid"></i></span>
+                    <span id="listView"><i class="bi bi-list-task"></i></span>
+                </div>
+            </div>
+
+            <div class="row g-4" id="productContainer">
+
+
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/head1.png">
+
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Black ViperX" data-price="$110.00" data-img="images/head1.png">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Black ViperX</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$110.00</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-01" data-name="BLACK VIPERX" data-price="110.00"
+                            data-img="images/head1.png">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item ">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/head2.png">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Onyx predator" data-price="$150.00" data-img="images/head2.png">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Onyx Predator</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$150.00</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-02" data-name="BLACK VIPERX" data-price="150.00"
+                            data-img="images/head2.png">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/head3.png">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Quantum Edge S Max" data-price="$230.00" data-img="images/head3.png">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Quantum Edge S Max</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$230.00</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-03" data-name="BLACK VIPERX" data-price="230.00"
+                            data-img="images/head3.png">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/head4.webp">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Sennheiser HD" data-price="$235.00" data-img="images/head4.webp">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Sennheiser HD</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$235.00</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-1" data-name="BLACK VIPERX" data-price="235.00"
+                            data-img="images/head4.webp">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/key4.webp">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Thunderbolt z prime" data-price="$110.00" data-img="images/key4.webp">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Thunderbolt Z prime</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$110.00</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-05" data-name="Thunderbolt Z prime"
+                            data-price="110.00" data-img="images/key4.webp">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/head5.webp">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Onyx predator" data-price="$210.70" data-img="images/head5.webp">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Onyx Predator</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$210.70</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-06" data-name="BLACK VIPERX" data-price="210.70"
+                            data-img="images/head5.webp">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/key6.webp">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Onyx Predator1" data-price="$169.99" data-img="images/key6.webp">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Onyx Predator1</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$169.99</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-07" data-name="Onyx predator1" data-price="169.99"
+                            data-img="images/key6.webp">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/c8.png">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Aurora Sentinel" data-price="$190.99" data-img="images/c8.png">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Aurora Sentinel</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$190.99</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-08" data-name="Aurora Sentinel"
+                            data-price="211.00" data-img="images/head1.png">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/c9.png">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Onyx Predator2" data-price="$189.99" data-img="images/c9.png">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Onyx Predator2</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$189.99</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-09" data-name="Onyx predator2" data-price="189.99"
+                            data-img="images/head1.png">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/c10.png">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Onyx Predator2" data-price="$189.99" data-img="images/c10.png">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Onyx Predator2</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$189.99</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+                        <button class="add-to-cart-btn" data-id="head-10" data-name="BLACK VIPERX" data-price="19.89"
+                            data-img="images/c10.png">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/c11.png">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Black ViperX1" data-price="$159.45" data-img="images/c11.png">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Black ViperX1</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$159.45</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-11" data-name="BLACK VIPERX1" data-price="159.45"
+                            data-img="images/c11.png">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/c12.png">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Onyx predator" data-price="$289.99" data-img="images/c12.png">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Onyx Predator</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$289.99</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-12" data-name="BLACK VIPERX" data-price="289.99"
+                            data-img="images/c12.png">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/c1.png">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Onyx Predator3" data-price="$199.99" data-img="images/c1.png">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Onyx Predator3</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$199.99</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-13" data-name="onyx Predator3" data-price="199.99"
+                            data-img="images/c1.png">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 col-lg-4 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/c3.png">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Black ViperX2" data-price="$109.99" data-img="images/c3.png">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>BLACK VIPERX2</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$109.99</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-1" data-name="BLACK VIPERX2" data-price="109.99"
+                            data-img="images/c3.png">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class=" col-col-lg-4 col-md-6 product-item">
+                    <div class="product-card">
+
+                        <div class="img-box">
+                            <img src="images/c12.png">
+
+                            <div class="hover-icons">
+                                <span class="wishlist-btn">
+                                    <i class="bi bi-star"></i>
+                                </span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Galaxy s21" data-price="$199.99" data-img="images/c12.png">
+                                    <i class="bi bi-eye"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <h6>Galaxy S21</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$199.99</h5>
+                        <p class="product-desc">
+                            IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it
+                            does
+                            in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                            elegant appeal.Lorem ipsum dolor sit am...
+                        </p>
+
+                        <button class="add-to-cart-btn" data-id="head-12" data-name="Galaxy S21" data-price="199.99"
+                            data-img="images/c12.png">
+                            Add To Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Accessories button and text content section -->
+    <section class="accessories-info py-5">
+        <div class="container">
+
+            <!-- TAGS -->
+            <div class="tag-title mb-3">
+                <strong>🏷 TAGS</strong>
+            </div>
+
+            <div class="tag-buttons mb-5">
+                <button class="tag-btn active">Console</button>
+                <button class="tag-btn">Gaming</button>
+                <button class="tag-btn">Headphone</button>
+                <button class="tag-btn">Headsets</button>
+                <button class="tag-btn">Mechanical</button>
+                <button class="tag-btn">PS4</button>
+                <button class="tag-btn">PS5</button>
+                <button class="tag-btn">Wire</button>
+            </div>
+
+            <!-- HEADING -->
+            <h2 class="accessories-title">ACCESSORIES</h2>
+
+            <!-- TEXT CONTENT -->
+            <div class="accessories-text">
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu ipsum eu quam blandit
+                    maximus.
+                    Donec at lacus lacus. Donec ultricies lacus libero, fermentum mollis velit accumsan ac.
+                    Morbi in
+                    nunc erat. Sed a ligula tristique mi aliquam pellentesque. Ut malesuada nisl eros, ut
+                    sollicitudin ex mattis quis. Praesent cursus a augue ac placerat. Nam mattis mi ac dui
+                    suscipit
+                    egestas. Vestibulum lorem libero, feugiat dapibus urna id, gravida varius tellus. Nam sed
+                    congue
+                    quam. Sed sit amet libero augue. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Nam et efficitur ante. Vestibulum quis volutpat felis,
+                    volutpat
+                    ornare nunc. Vivamus ac aliquam justo. Mauris ultrices posuere velit, eu elementum mauris.
+                </p>
+
+                <p>
+                    Phasellus vitae egestas orci. Pellentesque mi ex, vestibulum nec neque mollis, ultricies
+                    mollis
+                    elit. Sed purus elit, aliquet at erat id, efficitur vehicula velit. Fusce tristique lectus a
+                    velit finibus, sed facilisis odio placerat. Ut quis efficitur mi, quis porttitor ipsum.
+                    Phasellus euismod est vitae neque consectetur, nec laoreet enim pharetra. Aliquam non sem
+                    sit
+                    amet nunc consectetur ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                    sed
+                    orci non magna consectetur viverra. Suspendisse at lectus lacus. Suspendisse eget ultricies
+                    mi.
+                    Pellentesque rutrum porta lorem, ac interdum nisl faucibus at. Aliquam turpis metus, aliquam
+                    at
+                    bibendum scelerisque, posuere blandit urna. Nunc sit amet lacus purus. In mattis laoreet
+                    purus
+                    eget pulvinar. Quisque non enim mollis, ultricies quam efficitur, efficitur nunc.
+                </p>
+
+                <div id="moreText" class="more-text">
+                    <p>
+                        Phasellus vitae egestas orci. Pellentesque mi ex, vestibulum nec neque mollis, ultricies
+                        mollis elit. Sed purus elit, aliquet at erat id, efficitur vehicula velit. Fusce
+                        tristique
+                        lectus a velit finibus, sed facilisis odio placerat. Ut quis efficitur mi, quis
+                        porttitor
+                        ipsum. Phasellus euismod est vitae neque consectetur, nec laoreet enim pharetra. Aliquam
+                        non
+                        sem sit amet nunc consectetur ultrices. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing
+                        elit. Nam sed orci non magna consectetur viverra. Suspendisse at lectus lacus.
+                        Suspendisse
+                        eget ultricies mi. Pellentesque rutrum porta lorem, ac interdum nisl faucibus at.
+                        Aliquam
+                        turpis metus, aliquam at bibendum scelerisque, posuere blandit urna. Nunc sit amet lacus
+                        purus. In mattis laoreet purus eget pulvinar. Quisque non enim mollis, ultricies quam
+                        efficitur, efficitur nunc.
+                    </p>
+
+                </div>
+
+                <button class="see-more-btn" id="toggleBtn">SEE MORE +</button>
+
+            </div>
+
+        </div>
+    </section>
+    <!--  -feature Section -->
+    <section class="features-section py-5 border-top border-bottom">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature1.png" alt="Free Delivery" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Free Delivery</h6>
+                        <p class="text-muted small mb-0">Free shipping on all order above $200</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature3.png" alt="Support 24/7" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Support 24/7</h6>
+                        <p class="text-muted small mb-0">Contact us 24 hours a day, 7 days a week</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature4.png" alt="7 Days Return" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">7 Days Return</h6>
+                        <p class="text-muted small mb-0">Return it within 30 days for an exchange.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- RECENTLY VIEWED PRODUCTS -->
+    <section class="recent-section">
+        <h2 class="title">RECENTLY VIEWED PRODUCTS</h2>
+
+        <div class="slider-wrapper">
+            <div class="slider-track">
+
+                <!-- Product Card -->
+                <div class="slide-card">
+                    <img src="images/c1.png">
+                    <h6>Galaxy Striker</h6>
+                    <h5>$165.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <span class="badge">-9%</span>
+                    <img src="images/c2.png">
+                    <h6>Zephyr Wireless Gaming</h6>
+                    <h5>$215.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c3.png">
+                    <h6>Phantom Elite Headset Pro</h6>
+                    <h5>$192.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c4.png">
+                    <h6>Pulsar Phantom</h6>
+                    <h5>$100.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c5.png">
+                    <h6>Aurora Glide Wireless</h6>
+                    <h5>$211.00</h5>
+                </div>
+
+                <!-- Duplicate for infinite loop -->
+                <div class="slide-card">
+                    <img src="images/c1.png">
+                    <h6>Galaxy Striker</h6>
+                    <h5>$165.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c2.png">
+                    <h6>Zephyr Wireless Gaming</h6>
+                    <h5>$215.00</h5>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered mx-2 mx-md-auto">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn-close position-absolute end-0 m-3 shadow-none"
+                        data-bs-dismiss="modal" style="z-index: 1051;"></button>
+
+                    <div class="row g-0">
+                        <div
+                            class="col-12 col-md-6 bg-light d-flex align-items-center justify-content-center p-3 p-md-4">
+                            <img src="" id="modalImg" class="img-fluid modal-product-img" alt="Product">
+                        </div>
+
+                        <div class="col-12 col-md-6 p-4">
+                            <h3 id="modalTitle" class="fw-bold h4-mobile"></h3>
+                            <div class="stars mb-2 text-warning">★★★★★ <span class="text-muted small">(0)</span></div>
+                            <h2 id="modalPrice" class="text-dark mb-3 fw-bold h3-mobile"></h2>
+
+                            <p class="text-muted small mb-4">
+                                <strong>SKU:</strong> <span id="modalSKU">E-1234</span><br>
+                                <strong>AVAILABILITY:</strong> <span class="text-success">In Stock</span>
+                            </p>
+
+                            <div class="mt-auto">
+                                <label class="fw-bold mb-2 small">QUANTITY:</label>
+                                <div class="d-flex align-items-center gap-2">
+                                    <input type="number" id="qty" class="form-control text-center" value="1" min="1"
+                                        style="width: 70px; height: 45px;">
+
+                                    <button class="btn btn-dark flex-grow-1 py-2 fw-bold text-uppercase">
+                                        Add To Bag
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="collection-left.js"></script>
+    <script src="layout.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const quickViewModal = document.getElementById('quickViewModal');
+
+            // Jab modal open ho
+            quickViewModal.addEventListener('show.bs.modal', function (event) {
+                // Wo button jispe click hua
+                const button = event.relatedTarget;
+
+                // Button ke data attributes se info nikalna
+                const name = button.getAttribute('data-name');
+                const price = button.getAttribute('data-price');
+                const img = button.getAttribute('data-img');
+
+                // Modal ke andar ke elements ko update karna
+                const modalTitle = quickViewModal.querySelector('#modalTitle');
+                const modalPrice = quickViewModal.querySelector('#modalPrice');
+                const modalImg = quickViewModal.querySelector('#modalImg');
+
+                modalTitle.textContent = name;
+                modalPrice.textContent = price;
+                modalImg.src = img;
+
+                // Quantity hamesha 1 se start ho
+                document.getElementById('qty').value = 1;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

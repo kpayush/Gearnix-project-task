@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERROR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #a1a1a1;
+            font-family: 'Segoe UI', sans-serif;
+            overflow-x: hidden;
+        }
+
+       
+        /* Center Container */
+
+        .error-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* 404 Number */
+
+        .error-number {
+            font-size: 120px;
+            font-weight: 800;
+            color: #163a5f;
+        }
+
+        /* Heading */
+
+        .error-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        /* Text */
+
+        .error-text {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons */
+
+        .error-btn {
+            background: #111;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block;
+            transition: .3s;
+        }
+
+        .error-btn:hover {
+            background: #ff4fd8;
+            color: #fff;
+        }
+        /* ================= MOBILE RESPONSIVE ================= */
+
+.error-img {
+    max-width: 300px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .error-number {
+        font-size: 80px;
+    }
+
+    .error-title {
+        font-size: 28px;
+    }
+
+    .error-text {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .error-section {
+        padding: 40px 20px;
+        height: auto; /* important */
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .error-number {
+        font-size: 60px;
+    }
+
+    .error-title {
+        font-size: 22px;
+    }
+
+    .error-text {
+        font-size: 14px;
+    }
+
+    .error-img {
+        max-width: 220px;
+    }
+
+    /* Buttons stack */
+    .error-btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+/* Body aur Main Container ko screen ke andar rakhne ke liye */
+html, body {
+    overflow-x: hidden; /* Horizontal scroll puri tarah band karne ke liye */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+    </style>
+</head>
+
+<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+
+<div id="header"></div>
+
+<!-- error page  section-->
+    <section class="error-section">
+
+        <div class="container">
+            <img src="images/404error.webp" class="img-fluid mb-4 error-img">
+            <h1 class="error-number">404</h1>         
+            <h2 class="error-title">
+                PAGE NOT FOUND
+            </h2>          
+
+            <p class="error-text">
+                We're sorry — something has gone wrong on our end.
+            </p>
+
+            <div>
+
+                <a href="index.html" class="error-btn">
+                    Back To Homepage
+                </a>
+
+                <a href="collection-left.html" class="error-btn">
+                    Continue Shopping
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+<div id="footer"></div>
+    <script src="layout.js"></script>
+</body>
+
+</html>

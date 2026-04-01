@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load-more</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="collection-top.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        .load-more-btn {
+            padding: 12px 30px;
+            border: none;
+            background: #000;
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .load-more-btn:hover {
+            background: #ff4bd8;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+
+
+    <div class="Accessories-class">
+        <h2 class="Accessories-heading">Wireless keyboard</h2>
+        <h4 class="breadcrumb">Home &nbsp;.&nbsp;Wireless keyboard</h4>
+    </div>
+
+    <div class="col-lg-12 ">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <p class="mb-0">Sort by <b>Featured</b></p>
+            <div class="view-icons">
+                <span id="grid1"><i class="bi bi-grid-3x2"></i></span>
+                <span id="grid3" class="active"><i class="bi bi-grid-3x3"></i></span>
+                <span id="grid2"><i class="bi bi-grid"></i></span>
+                <span id="listView"><i class="bi bi-list-task"></i></span>
+            </div>
+        </div>
+
+        <div class="row g-4" id="productContainer">
+
+            <!-- Product Card -->
+            <div class="col-6 col-lg-4 col-md-6 product-item ">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/key1.png">
+
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Aurora Glide Wireless Keyboard</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$211.00</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head-1" data-name="BLACK VIPERX" data-price="211.00"
+                        data-img="images/head1.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-item  ">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/key1.webp">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Aurora Sentinel</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$137.00</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/key2.webp">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Black ViperX</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$110.00</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/key3.webp">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$29.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/key4.webp">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$19.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/key5.webp">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$19.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/key6.webp">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$19.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c8.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$19.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c9.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$19.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c10.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$19.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c11.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$119.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c12.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$199.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c1.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$199.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c3.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$109.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c12.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                            <span><i class="bi bi-eye"></i></span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$199.99</h5>
+                    <p class="product-desc">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit am...
+                    </p>
+
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mt-4">
+            <button id="loadMoreBtn" class="load-more-btn">Load More</button>
+        </div>
+    </div>
+
+    <!-- Accessories button and text content section -->
+    <section class="accessories-info py-5">
+        <div class="container">
+
+            <!-- TAGS -->
+            <div class="tag-title mb-3">
+                <strong>🏷 TAGS</strong>
+            </div>
+
+            <div class="tag-buttons mb-5">
+                <button class="tag-btn active">Console</button>
+                <button class="tag-btn">Gaming</button>
+                <button class="tag-btn">Headphone</button>
+                <button class="tag-btn">Headsets</button>
+                <button class="tag-btn">Mechanical</button>
+                <button class="tag-btn">PS4</button>
+                <button class="tag-btn">PS5</button>
+                <button class="tag-btn">Wire</button>
+            </div>
+
+            <!-- HEADING -->
+            <h2 class="accessories-title">keyboard</h2>
+
+            <!-- TEXT CONTENT -->
+            <div class="accessories-text">
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu ipsum eu quam blandit maximus.
+                    Donec at lacus lacus. Donec ultricies lacus libero, fermentum mollis velit accumsan ac. Morbi in
+                    nunc erat. Sed a ligula tristique mi aliquam pellentesque. Ut malesuada nisl eros, ut
+                    sollicitudin ex mattis quis. Praesent cursus a augue ac placerat. Nam mattis mi ac dui suscipit
+                    egestas. Vestibulum lorem libero, feugiat dapibus urna id, gravida varius tellus. Nam sed congue
+                    quam. Sed sit amet libero augue. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Nam et efficitur ante. Vestibulum quis volutpat felis, volutpat
+                    ornare nunc. Vivamus ac aliquam justo. Mauris ultrices posuere velit, eu elementum mauris.
+                </p>
+
+                <p>
+                    Phasellus vitae egestas orci. Pellentesque mi ex, vestibulum nec neque mollis, ultricies mollis
+                    elit. Sed purus elit, aliquet at erat id, efficitur vehicula velit. Fusce tristique lectus a
+                    velit finibus, sed facilisis odio placerat. Ut quis efficitur mi, quis porttitor ipsum.
+                    Phasellus euismod est vitae neque consectetur, nec laoreet enim pharetra. Aliquam non sem sit
+                    amet nunc consectetur ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed
+                    orci non magna consectetur viverra. Suspendisse at lectus lacus. Suspendisse eget ultricies mi.
+                    Pellentesque rutrum porta lorem, ac interdum nisl faucibus at. Aliquam turpis metus, aliquam at
+                    bibendum scelerisque, posuere blandit urna. Nunc sit amet lacus purus. In mattis laoreet purus
+                    eget pulvinar. Quisque non enim mollis, ultricies quam efficitur, efficitur nunc.
+                </p>
+
+                <div id="moreText" class="more-text">
+                    <p>
+                        Phasellus vitae egestas orci. Pellentesque mi ex, vestibulum nec neque mollis, ultricies
+                        mollis elit. Sed purus elit, aliquet at erat id, efficitur vehicula velit. Fusce tristique
+                        lectus a velit finibus, sed facilisis odio placerat. Ut quis efficitur mi, quis porttitor
+                        ipsum. Phasellus euismod est vitae neque consectetur, nec laoreet enim pharetra. Aliquam non
+                        sem sit amet nunc consectetur ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Nam sed orci non magna consectetur viverra. Suspendisse at lectus lacus. Suspendisse
+                        eget ultricies mi. Pellentesque rutrum porta lorem, ac interdum nisl faucibus at. Aliquam
+                        turpis metus, aliquam at bibendum scelerisque, posuere blandit urna. Nunc sit amet lacus
+                        purus. In mattis laoreet purus eget pulvinar. Quisque non enim mollis, ultricies quam
+                        efficitur, efficitur nunc.
+                    </p>
+
+                </div>
+
+                <button class="see-more-btn" id="toggleBtn">SEE MORE +</button>
+
+            </div>
+
+        </div>
+    </section>
+    <!--  -feature Section -->
+    <section class="features-section py-5 border-top border-bottom">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature1.png" alt="Free Delivery" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Free Delivery</h6>
+                        <p class="text-muted small mb-0">Free shipping on all order above $200</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature3.png" alt="Support 24/7" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Support 24/7</h6>
+                        <p class="text-muted small mb-0">Contact us 24 hours a day, 7 days a week</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature4.png" alt="7 Days Return" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">7 Days Return</h6>
+                        <p class="text-muted small mb-0">Return it within 30 days for an exchange.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- RECENTLY VIEWED PRODUCTS -->
+    <section class="recent-section">
+        <h2 class="title">RECENTLY VIEWED PRODUCTS</h2>
+
+        <div class="slider-wrapper">
+            <div class="slider-track">
+
+                <!-- Product Card -->
+                <div class="slide-card">
+                    <img src="images/c1.png">
+                    <h6>Galaxy Striker</h6>
+                    <h5>$165.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <span class="badge">-9%</span>
+                    <img src="images/c2.png">
+                    <h6>Zephyr Wireless Gaming</h6>
+                    <h5>$215.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c3.png">
+                    <h6>Phantom Elite Headset Pro</h6>
+                    <h5>$192.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c4.png">
+                    <h6>Pulsar Phantom</h6>
+                    <h5>$100.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c5.png">
+                    <h6>Aurora Glide Wireless</h6>
+                    <h5>$211.00</h5>
+                </div>
+
+                <!-- Duplicate for infinite loop -->
+                <div class="slide-card">
+                    <img src="images/c1.png">
+                    <h6>Galaxy Striker</h6>
+                    <h5>$165.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c2.png">
+                    <h6>Zephyr Wireless Gaming</h6>
+                    <h5>$215.00</h5>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="collection-canvas-left.js"></script>
+    <script src="layout.js"></script>
+
+</body>
+
+</html>

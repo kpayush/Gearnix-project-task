@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top canvas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="collection-canvas-top.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="Accessories-class">
+        <h2 class="Accessories-heading"> Wire headphone</h2>
+        <h4 class="breadcrumb">Home &nbsp;.&nbsp; Wire headphone</h4>
+    </div>
+
+    <div class="offcanvas offcanvas-top filter-top" tabindex="-1" id="filterTop">
+
+        <div class="offcanvas-header">
+            <h5 class="fw-bold">FILTER PRODUCTS</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <div class="container">
+
+                <div class="row g-5">
+
+                    <!-- AVAILABILITY -->
+                    <div class="col-lg-3">
+
+                        <div class="d-flex justify-content-between mb-3">
+                            <h6 class="fw-bold">AVAILABILITY</h6>
+                            <small class="text-muted">RESET</small>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">In stock (22)</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label text-muted">Out of stock (0)</label>
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRICE -->
+                    <div class="col-lg-3">
+
+                        <div class="d-flex justify-content-between mb-3">
+                            <h6 class="fw-bold">PRICE</h6>
+                            <small class="text-muted">RESET</small>
+                        </div>
+
+                        <input type="range" class="form-range">
+
+                        <div class="d-flex gap-2 mt-3">
+
+                            <input type="text" class="form-control text-center" value="0">
+
+                            <input type="text" class="form-control text-center" value="800">
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT TYPE -->
+                    <div class="col-lg-3">
+
+                        <div class="d-flex justify-content-between mb-3">
+                            <h6 class="fw-bold">PRODUCT TYPE</h6>
+                            <small class="text-muted">RESET</small>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Console (6)</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Headsets (6)</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Keyboard (4)</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Mouse (6)</label>
+                        </div>
+
+                    </div>
+
+
+                    <!-- MORE FILTER -->
+                    <div class="col-lg-3">
+
+                        <div class="d-flex justify-content-between mb-3">
+                            <h6 class="fw-bold">MORE FILTERS</h6>
+                            <small class="text-muted">RESET</small>
+                        </div>
+
+                        <div class="filter-scroll">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Console (12)</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Gaming (10)</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Headphone (6)</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Headsets (6)</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Mechanical (10)</label>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BRAND -->
+                    <div class="col-lg-3">
+
+                        <div class="d-flex justify-content-between mb-3">
+                            <h6 class="fw-bold">BRAND</h6>
+                            <small class="text-muted">RESET</small>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Akko (4)</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Logitech (11)</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Razer (1)</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label">Sony (6)</label>
+                        </div>
+
+                    </div>
+
+
+                    <!-- COLOR -->
+                    <div class="col-lg-3">
+
+                        <div class="d-flex justify-content-between mb-3">
+                            <h6 class="fw-bold">COLOR</h6>
+                            <small class="text-muted">RESET</small>
+                        </div>
+
+                        <div class="d-flex gap-3">
+
+                            <span class="color black"></span>
+                            <span class="color red"></span>
+                            <span class="color gray"></span>
+                            <span class="color yellow"></span>
+                            <span class="color blue"></span>
+                            <span class="color white"></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container py-5">
+
+        <div class=" filter-bar d-flex justify-content-between align-items-center mb-4">
+
+            <div class="d-flex align-items-center gap-3">
+
+                <button class="btn btn-dark px-4" data-bs-toggle="offcanvas" data-bs-target="#filterTop">
+
+                    <i class="bi bi-sliders me-2"></i> Filter
+                </button>
+
+                <p class="mb-0">Sort by <b>Featured</b></p>
+
+            </div>
+
+            <div class="view-icons">
+                <span id="grid1"><i class="bi bi-grid-3x2"></i></span>
+                <span id="grid3" class="active"><i class="bi bi-grid-3x3"></i></span>
+                <span id="grid2"><i class="bi bi-grid"></i></span>
+                <span id="listView"><i class="bi bi-list-task"></i></span>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="row g-4" id="productContainer">
+
+            <!-- Product Card -->
+            <div class=" col-6 col-lg-4 col-md-6 product-item ">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/head1.png">
+
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Black viperX" data-price="$211.00" data-img="images/head1.png">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Black ViperX</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$211.00</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head1" data-name="BLACK VIPERX" data-price="211.00"
+                        data-img="images/head1.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class=" col-6 col-lg-4 col-md-6 product-item ">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/head2.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Onyx predator" data-price="$137.00" data-img="images/head2.png">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$137.00</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+                    <button class="add-to-cart-btn" data-id="head2" data-name="Onyx predator" data-price="137.00"
+                        data-img="images/head2.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/head3.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Quantum Edge S Max" data-price="$110.00" data-img="images/head3.png">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Quantum Edge S Max</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$110.00</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head3" data-name="Quantum Edge S max" data-price="110.00"
+                        data-img="images/head3.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/mouse4.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Zephyr Wireless Gaming" data-price="$211.00" data-img="images/mouse4.png">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Zephyr Wireless Gaming</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$211.00</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head4" data-name="Zephyr Wireless gaming"
+                        data-price="211.00" data-img="images/mouse4.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/key4.webp">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Onyx Predator" data-price="$109.99" data-img="images/key4.webp">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$109.99</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head5" data-name="Onyx predator" data-price="109.99"
+                        data-img="images/key4.webp">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/key5.webp">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Onyx Predator1" data-price="$179.99" data-img="images/key5.webp">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator1</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$179.99</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head6" data-name="Onyx predator1" data-price="179.99"
+                        data-img="images/key5.webp">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/key6.webp">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Onyx Predator3" data-price="$211.00" data-img="images/key6.webp">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator3</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$211.00</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head7" data-name="onyx predator3" data-price="211.00"
+                        data-img="images/key6.webp">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c8.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                    data-name="Onyx Predator" data-price="$109.99" data-img="images/c8.png">
+                                    <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$149.99</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head8" data-name="Eclipse RGB Gaming Mouse"
+                        data-price="149.99" data-img="images/c8.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c9.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Eclipse RGB Gaming" data-price="$290.99" data-img="images/c9.png">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Eclipse RGB Gaming</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$290.99</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head9" data-name="Eclipse RGB Gaming " data-price="290.99"
+                        data-img="images/c9.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c10.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Eclipse RGB Gaming Mouse1" data-price="$349.99" data-img="images/c10.png">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Eclipse RGB Gaming Mouse1</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$349.99</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head10" data-name="Eclipse RGB Gaming Mouse1"
+                        data-price="349.99" data-img="images/c10.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c11.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Onyx Predator" data-price="$119.99" data-img="images/c11.png">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$119.99</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head11" data-name="Eclipse RGB Gaming Mouse"
+                        data-price="119.99" data-img="images/c11.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c12.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Onyx Predator" data-price="$199.99" data-img="images/c12.png">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Onyx Predator</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$199.99</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head12" data-name="Eclipse RGB Gaming Mouse"
+                        data-price="199.99" data-img="images/c12.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c1.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Thunderbolt Z prime" data-price="$199.99" data-img="images/c1.png">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Thunderbolt Z prime</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$199.99</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head13" data-name="Thunderbolt z prime" data-price="199.90"
+                        data-img="images/c1.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c3.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="box6 gaming Nexus" data-price="$267.99" data-img="images/c3.png">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>box6 gaming Nexus</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$267.99</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head14" data-name="box6 gaming Nexus" data-price="267.99"
+                        data-img="images/c3.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+            <div class=" col-6 col-lg-4 col-md-6 product-item">
+                <div class="product-card">
+
+                    <div class="img-box">
+                        <img src="images/c12.png">
+
+                        <div class="hover-icons">
+                            <span class="wishlist-btn">
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span><i class="bi bi-cart"></i></span>
+                          <span class="view-btn" data-bs-toggle="modal" data-bs-target="#quickViewModal"
+                                data-name="Box6 Gaming Nexus pro" data-price="$599.99" data-img="images/c12.png">
+                                <i class="bi bi-eye"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <h6>Box6 Gaming Nexus pro</h6>
+                    <div class="stars">★★★★★</div>
+                    <h5>$599.99</h5>
+                    <p class="product-desc">
+                        High performance gaming accessory with premium build quality and RGB lighting.
+                    </p>
+
+                    <button class="add-to-cart-btn" data-id="head15" data-name="Box6 Gaming Nexus pro"
+                        data-price="599.99" data-img="images/c12.png">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mt-4">
+            <button id="loadMoreBtn" class="load-more-btn">Load More</button>
+        </div>
+    </div>
+
+    <!-- Accessories button and text content section -->
+    <section class="accessories-info py-5">
+        <div class="container">
+
+            <!-- TAGS -->
+            <div class="tag-title mb-3">
+                <strong>🏷 TAGS</strong>
+            </div>
+
+            <div class="tag-buttons mb-5">
+                <button class="tag-btn active">Console</button>
+                <button class="tag-btn">Gaming</button>
+                <button class="tag-btn">Headphone</button>
+                <button class="tag-btn">Headsets</button>
+                <button class="tag-btn">Mechanical</button>
+                <button class="tag-btn">PS4</button>
+                <button class="tag-btn">PS5</button>
+                <button class="tag-btn">Wire</button>
+            </div>
+
+            <!-- HEADING -->
+            <h2 class="accessories-title">keyboard</h2>
+
+            <!-- TEXT CONTENT -->
+            <div class="accessories-text">
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu ipsum eu quam blandit maximus.
+                    Donec at lacus lacus. Donec ultricies lacus libero, fermentum mollis velit accumsan ac. Morbi in
+                    nunc erat. Sed a ligula tristique mi aliquam pellentesque. Ut malesuada nisl eros, ut
+                    sollicitudin ex mattis quis. Praesent cursus a augue ac placerat. Nam mattis mi ac dui suscipit
+                    egestas. Vestibulum lorem libero, feugiat dapibus urna id, gravida varius tellus. Nam sed congue
+                    quam. Sed sit amet libero augue. Class aptent taciti sociosqu ad litora torquent per conubia
+                    nostra, per inceptos himenaeos. Nam et efficitur ante. Vestibulum quis volutpat felis, volutpat
+                    ornare nunc. Vivamus ac aliquam justo. Mauris ultrices posuere velit, eu elementum mauris.
+                </p>
+
+                <p>
+                    Phasellus vitae egestas orci. Pellentesque mi ex, vestibulum nec neque mollis, ultricies mollis
+                    elit. Sed purus elit, aliquet at erat id, efficitur vehicula velit. Fusce tristique lectus a
+                    velit finibus, sed facilisis odio placerat. Ut quis efficitur mi, quis porttitor ipsum.
+                    Phasellus euismod est vitae neque consectetur, nec laoreet enim pharetra. Aliquam non sem sit
+                    amet nunc consectetur ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed
+                    orci non magna consectetur viverra. Suspendisse at lectus lacus. Suspendisse eget ultricies mi.
+                    Pellentesque rutrum porta lorem, ac interdum nisl faucibus at. Aliquam turpis metus, aliquam at
+                    bibendum scelerisque, posuere blandit urna. Nunc sit amet lacus purus. In mattis laoreet purus
+                    eget pulvinar. Quisque non enim mollis, ultricies quam efficitur, efficitur nunc.
+                </p>
+
+                <div id="moreText" class="more-text">
+                    <p>
+                        Phasellus vitae egestas orci. Pellentesque mi ex, vestibulum nec neque mollis, ultricies
+                        mollis elit. Sed purus elit, aliquet at erat id, efficitur vehicula velit. Fusce tristique
+                        lectus a velit finibus, sed facilisis odio placerat. Ut quis efficitur mi, quis porttitor
+                        ipsum. Phasellus euismod est vitae neque consectetur, nec laoreet enim pharetra. Aliquam non
+                        sem sit amet nunc consectetur ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Nam sed orci non magna consectetur viverra. Suspendisse at lectus lacus. Suspendisse
+                        eget ultricies mi. Pellentesque rutrum porta lorem, ac interdum nisl faucibus at. Aliquam
+                        turpis metus, aliquam at bibendum scelerisque, posuere blandit urna. Nunc sit amet lacus
+                        purus. In mattis laoreet purus eget pulvinar. Quisque non enim mollis, ultricies quam
+                        efficitur, efficitur nunc.
+                    </p>
+
+                </div>
+
+                <button class="see-more-btn" id="toggleBtn">SEE MORE +</button>
+
+            </div>
+
+        </div>
+    </section>
+    <!--  -feature Section -->
+    <section class="features-section py-5 border-top border-bottom">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature1.png" alt="Free Delivery" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Free Delivery</h6>
+                        <p class="text-muted small mb-0">Free shipping on all order above $200</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature3.png" alt="Support 24/7" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Support 24/7</h6>
+                        <p class="text-muted small mb-0">Contact us 24 hours a day, 7 days a week</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature4.png" alt="7 Days Return" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">7 Days Return</h6>
+                        <p class="text-muted small mb-0">Return it within 30 days for an exchange.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- RECENTLY VIEWED PRODUCTS -->
+    <section class="recent-section">
+        <h2 class="title">RECENTLY VIEWED PRODUCTS</h2>
+
+        <div class="slider-wrapper">
+            <div class="slider-track">
+
+                <!-- Product Card -->
+                <div class="slide-card">
+                    <img src="images/c1.png">
+                    <h6>Galaxy Striker</h6>
+                    <h5>$165.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <span class="badge">-9%</span>
+                    <img src="images/c2.png">
+                    <h6>Zephyr Wireless Gaming</h6>
+                    <h5>$215.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c3.png">
+                    <h6>Phantom Elite Headset Pro</h6>
+                    <h5>$192.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c4.png">
+                    <h6>Pulsar Phantom</h6>
+                    <h5>$100.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c5.png">
+                    <h6>Aurora Glide Wireless</h6>
+                    <h5>$211.00</h5>
+                </div>
+
+                <!-- Duplicate for infinite loop -->
+                <div class="slide-card">
+                    <img src="images/c1.png">
+                    <h6>Galaxy Striker</h6>
+                    <h5>$165.00</h5>
+                </div>
+
+                <div class="slide-card">
+                    <img src="images/c2.png">
+                    <h6>Zephyr Wireless Gaming</h6>
+                    <h5>$215.00</h5>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+     <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered mx-2 mx-md-auto">
+            <div class="modal-content overflow-hidden">
+                <div class="modal-body p-0">
+                    <button type="button" class="btn-close position-absolute end-0 m-3 shadow-none"
+                        data-bs-dismiss="modal" style="z-index: 1051;"></button>
+
+                    <div class="row g-0">
+                        <div
+                            class="col-12 col-md-6 bg-light d-flex align-items-center justify-content-center p-3 p-md-4">
+                            <img src="" id="modalImg" class="img-fluid modal-product-img" alt="Product">
+                        </div>
+
+                        <div class="col-12 col-md-6 p-4">
+                            <h3 id="modalTitle" class="fw-bold h4-mobile"></h3>
+                            <div class="stars mb-2 text-warning">★★★★★ <span class="text-muted small">(0)</span></div>
+                            <h2 id="modalPrice" class="text-dark mb-3 fw-bold h3-mobile"></h2>
+
+                            <p class="text-muted small mb-4">
+                                <strong>SKU:</strong> <span id="modalSKU">E-1234</span><br>
+                                <strong>AVAILABILITY:</strong> <span class="text-success">In Stock</span>
+                            </p>
+
+                            <div class="mt-auto">
+                                <label class="fw-bold mb-2 small">QUANTITY:</label>
+                                <div class="d-flex align-items-center gap-2">
+                                    <input type="number" id="qty" class="form-control text-center" value="1" min="1"
+                                        style="width: 70px; height: 45px;">
+                                        
+                                    <button class="btn btn-dark flex-grow-1 py-2 fw-bold text-uppercase">
+                                        Add To Bag
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="collection-canvas-left.js"></script>
+    <script src="layout.js"></script>
+    <script src="cart.js"></script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const quickViewModal = document.getElementById('quickViewModal');
+
+            // Jab modal open ho
+            quickViewModal.addEventListener('show.bs.modal', function (event) {
+                // Wo button jispe click hua
+                const button = event.relatedTarget;
+
+                // Button ke data attributes se info nikalna
+                const name = button.getAttribute('data-name');
+                const price = button.getAttribute('data-price');
+                const img = button.getAttribute('data-img');
+
+                // Modal ke andar ke elements ko update karna
+                const modalTitle = quickViewModal.querySelector('#modalTitle');
+                const modalPrice = quickViewModal.querySelector('#modalPrice');
+                const modalImg = quickViewModal.querySelector('#modalImg');
+
+                modalTitle.textContent = name;
+                modalPrice.textContent = price;
+                modalImg.src = img;
+
+                // Quantity hamesha 1 se start ho
+                document.getElementById('qty').value = 1;
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

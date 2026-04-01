@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Glide - Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="product-slider1.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="product-details.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <nav class="text-center my-4">
+        <span class="text-muted">Home</span> • <strong>Onyx Predator</strong>
+    </nav>
+
+    <div id="productCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner container">
+            <div class="carousel-item active">
+                <div class="row align-items-center">
+                    <div class="col-6 p-4">
+                        <img src="images/head2.png" class="img-fluid" alt="Headphone 1">
+                    </div>
+                    <div class="col-6 p-4">
+                        <img src="images/head1.png" class="img-fluid" alt="Headphone 2">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row align-items-center">
+                    <div class="col-6 p-4">
+                        <img src="images/head4.webp" class="img-fluid" alt="Headphone 3">
+                    </div>
+                    <div class="col-6 p-4">
+                        <img src="images/head5.webp" class="img-fluid" alt="Headphone 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+        </button>
+
+        <div class="carousel-indicators position-relative mt-4">
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active dot"></button>
+            <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" class="dot"></button>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold d-inline-block me-2">Onyx Predator</h2>
+            <button class="btn btn-light rounded-circle border"><i class="bi bi-heart"></i></button>
+            <div class="mt-2">
+                <span class="text-warning">★★★★★</span>
+                <span class="text-muted small">(0)</span>
+            </div>
+        </div>
+
+        <hr class="text-muted opacity-25">
+
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h3 class="fw-bold mb-3">$150.00</h3>
+                <p class="text-muted">IronCaptivate with this shirt's versatile urban look that works as well at happy
+                    hour as it does in the back yard. The real mother of pearl buttons and embroidered crocodile
+                    complete its elegant appeal. Lorem ipsum...</p>
+
+                <div class="mt-4">
+                    <p><strong>AVAILABLE:</strong> <span class="text-success ms-2">IN STOCK <i
+                                class="bi bi-check2"></i></span></p>
+                    <p><strong>TAGS:</strong> <span class="text-muted ms-2">Console, Headphone, Headsets</span></p>
+                    <p><strong>SKU:</strong> <span class="text-muted ms-2">e-1234</span></p>
+                    <p><strong>CATEGORY:</strong> <span class="text-muted ms-2 small">Accessories, Consoles, Headphones,
+                            Wire headphone, Wire keyboard, Wire mouse, Wireless headset, Wireless keyboard, Wireless
+                            mouse</span></p>
+                </div>
+            </div>
+
+            <div class="col-md-5 offset-md-1">
+                <label class="fw-bold mb-2">QUANTITY:</label>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="input-group" style="width: 130px;">
+                        <button class="btn btn-outline-secondary">-</button>
+                        <input type="text" class="form-control text-center" value="1">
+                        <button class="btn btn-outline-secondary">+</button>
+                    </div>
+                    <button class="btn btn-dark flex-grow-1 ms-3 py-2 rounded-pill">ADD TO BAG</button>
+                    <button class="btn btn-light border rounded-circle ms-2"><i class="bi bi-heart"></i></button>
+                </div>
+
+                <button class="btn btn-outline-dark w-100 py-3 rounded-pill mb-4 fw-bold">BUY IT NOW</button>
+
+                <div class="d-flex gap-4 border-bottom pb-4 mb-4">
+                    <a href="#" class="text-decoration-none text-dark small fw-bold"><i
+                            class="fas fa-share-alt me-2"></i> SHARE</a>
+                    <a href="#" class="text-decoration-none text-dark small fw-bold"><i
+                            class="far fa-question-circle me-2"></i> ASK A QUESTION</a>
+                    <a href="faqs.html" class="text-decoration-none text-dark small fw-bold"><i
+                            class="fas fa-info-circle me-2"></i> FAQ</a>
+                </div>
+
+                <div class="border rounded p-3 text-center">
+                    <p class="small fw-bold text-muted mb-2">GUARANTEED SAFE CHECKOUT:</p>
+                    <img src="images/payment1.png   " class="img-fluid" alt="Payment Methods">
+                </div>
+
+                <div class="mt-4 small">
+                    <p><i class="bi bi-clock"></i> Orders ship within 5 to 10 business days.</p>
+                    <p><i class="bi bi-truck"></i> Hoorey ! This item ships free to the US</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5 border-top pt-4 ">
+        <ul class="nav nav-tabs border-0 justify-content-start" id="myTab">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab"
+                    data-bs-target="#desc">Description</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#delivery">Delivery
+                    Policy</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#returns">Shipping &
+                    Return</button></li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#custom">Custom
+                    Tab</button></li>
+        </ul>
+        <div class="tab-content p-3 border">
+            <div class="tab-pane fade show active" id="desc">
+                <p class="text-muted small mb-4" style="line-height: 1.6;">
+                    IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                    in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                    elegant appeal.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                    eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    ridicu lus mus. Donec quam felis, ultri cies nec, pellentesque eu, pretium quis, sem. Nulla
+                    consequat massa quis enim.
+                </p>
+                <h5 class="text-muted  mt-2 fw-bold" style="color: #000;">Sample Ordered Lista</h5>
+                <ul class="list-group list-group-numbered mt-2">
+                    <li>Comodous in tempor ullamcorper miaculis</li>
+                    <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+                    <li>Divamus sit amet purus justo.</li>
+                    <li>Proin molestie egestas orci ac suscipit risus posuere loremous
+                    </li>
+                </ul>
+
+                <h5 class="text-muted  mt-2 fw-bold" style="color: #000;">Sample Paragraph Text</h5>
+                <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit.
+                    Accessorize with a straw hat and you're ready for summer!Faded short sleeves t-shirt with high
+                    neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and
+                    you're ready for summe!Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridicu lus mus. Donec quam felis, ultri cies nec, pellentesque eu, pretium
+                    quis, sem. Nulla consequat massa quis enim.
+
+                </p>
+
+
+            </div>
+            <div class="tab-pane fade" id="delivery">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                vulputate, lectus ac pretium maximus, magna neque fermentum arcu, ut pulvinar arcu erat vel massa.
+                Pellentesque ac arcu blandit, vestibulum tortor eget, dictum magna. Curabitur sit amet metus nulla.
+                Pellentesque et augue et urna volutpat vestibulum vitae eget ligula. Maecenas mi augue, faucibus
+                scelerisque facilisis in, dignissim vitae justo. Sed venenatis lectus et leo malesuada iaculis. Nunc
+                lacinia arcu id elementum rhoncus. Duis tempor, enim vel vulputate interdum, magna sapien lacinia
+                enim, nec lobortis quam enim eu erat. Aenean faucibus ex vitae nibh accumsan ullamcorper. Sed a orci
+                augue. Maecenas porttitor venenatis semper.</div>
+            <div class="tab-pane fade" id="returns">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus libero quis mauris vestibulum
+                dapibus.
+
+                Maecenas ullamcorper erat mi, vel consequat enim suscipit at. Pellentesque a elit at elit
+            </div>
+            <div class="tab-pane fade" id="custom">
+                <table class="table table-striped">
+
+                    <tr>
+                        <th>Lorem ipsum dolor sit amet.</th>
+                        <th>
+                            Maecenas ullamcorper erat mi, vel consequat enim suscipit at.</th>
+                    </tr>
+
+                    <tr>
+                        <th>Quisque in felis ut tellus</th>
+                        <th>Pellentesque a elit at elit auctor tempus sed vitae mi</th>
+                    </tr>
+
+                    <tr>
+                        <th>Morbi blandit auctor</th>
+                        <th>Vestibulum sollicitudin tortor dui, quis aliquet sapien convallis sed.</th>
+                    </tr>
+                    <tr>
+                        <th>Sed sit amet risus quis velit lacinia gravida.</th>
+                        <th>Aenean interdum elementum arcu. Vivamus purus lorem, semper quis libero et.</th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            Morbi dictum orci neque.
+                        </th>
+                        <th>Curabitur vehicula tellus sit amet neque placerat, vel sagittis.</th>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- FEATURES SECTION -->
+    <section class="features-section py-5 border-top border-bottom">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature1.png" alt="Free Delivery" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Free Delivery</h6>
+                        <p class="text-muted small mb-0">Free shipping on all order above $200</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature3.png" alt="Support 24/7" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">Support 24/7</h6>
+                        <p class="text-muted small mb-0">Contact us 24 hours a day, 7 days a week</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
+                    <div class="feature-img-wrapper me-3">
+                        <img src="images/feature4.png" alt="7 Days Return" class="img-fluid">
+                    </div>
+                    <div>
+                        <h6 class="fw-bold mb-1">7 Days Return</h6>
+                        <p class="text-muted small mb-0">Return it within 30 days for an exchange.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- review Section -->
+    <section class="review-section container my-5">
+
+        <div class="row g-4">
+
+            <!-- LEFT REVIEW CARD -->
+            <div class="col-lg-4 col-md-5">
+
+                <div class="review-card p-4">
+
+                    <h5 class="mb-3">Reviews</h5>
+
+                    <!-- Rating Summary -->
+                    <div class="rating-summary d-flex align-items-center mb-4">
+                        <span class="star me-2"><i class="bi bi-star-fill"></i></span>
+                        <h2 class="mb-0 me-3">0.0</h2>
+                        <span class="text-muted">0 reviews</span>
+                    </div>
+
+                    <!-- Rating Bars -->
+                    <div class="rating-bars">
+
+                        <div class="rating-row">
+                            <span>5</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>4</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>3</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>2</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>1</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Click Review -->
+                    <div class="click-review text-center mt-4">
+                        <p class="mb-2">Click to review</p>
+                        <div class="review-stars">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT REVIEW MESSAGE -->
+
+            <div class="col-lg-8 col-md-7">
+
+                <div class="no-review-box d-flex align-items-center justify-content-center">
+                    No reviews yet, lead the way and share your thoughts
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- product section  -->
+
+    <div class="container my-5">
+        <h2 class="text-center fw-bold mb-5" style="letter-spacing: 2px;">PRODUCT RELATED</h2>
+
+        <div id="productSlider" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row g-4">
+                        <!-- card1 -->
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/1_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head01"
+                                            data-name="Sennheiser HD" data-price="192.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/1_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Sennheiser HD</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$192.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/4_360x.png"
+                                        class="img-fluid">
+
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head02"
+                                            data-name="Aurora Glide Wireless" data-price="192.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/4_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Aurora Glide Wireless </h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$625.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/1_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head03"
+                                            data-name="Phantom Elite Headset" data-price="192.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/1_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite Headset</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$192.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 4  -->
+
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/2_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head04"
+                                            data-name="Phantom Elite Headset pro" data-price="182.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/2_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite Headset pro</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$182.00</h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="carousel-item ">
+                    <div class="row g-4">
+                        <!-- card1 -->
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/5_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head05"
+                                            data-name="Thunderbalt Z prime" data-price="792.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/5_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Thunderbalt Z prime</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$792.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/4_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head06"
+                                            data-name="black viperX" data-price="625.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/4_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">black viperX</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$625.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/6_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head01"
+                                            data-name="black viperX prime" data-price="1092.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/6_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">black viperX prime</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$1,092.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 4  -->
+
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/2_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head07"
+                                            data-name="Phantom Elite" data-price="992.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/2_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite </h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$992.00</h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="carousel-item ">
+                    <div class="row g-4">
+                        <!-- card1 -->
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/1_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head08"
+                                            data-name="Phantom Elite pro" data-price="199.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/1_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite pro</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$199.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 2 -->
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/2_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head09"
+                                            data-name="PG4 Console" data-price="952.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/2_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">PG4 Console </h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$952.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 3 -->
+
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/1_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head10"
+                                            data-name="Phantom Headset" data-price="192.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/1_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Headset</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$192.00</h5>
+                            </div>
+                        </div>
+                        <!-- card 4  -->
+
+                        <div class="col-md-3 col-10 mx-auto">
+                            <div class="custom-card product-card text-center p-3">
+                                <div class="img-box position-relative">
+                                    <img src="https://nov-gearnix.myshopify.com/cdn/shop/files/1_360x.png"
+                                        class="img-fluid">
+                                    <div class="side-buttons">
+                                        <span class="wishlist-btn" style="cursor: pointer;">
+                                            <i class="bi bi-star"></i>
+                                        </span>
+                                        <span class="add-to-cart-btn" style="cursor: pointer;" data-id="head12"
+                                            data-name="Sennheiser HD" data-price="192.00"
+                                            data-img="https://nov-gearnix.myshopify.com/cdn/shop/files/1_360x.png">
+                                            <i class="bi bi-cart"></i>
+                                        </span>
+                                        <button class="btn shadow-sm"><i class="bi bi-eye"></i></button>
+                                    </div>
+                                </div>
+                                <h6 class="mt-4 fw-bold">Phantom Elite Headset-1</h6>
+                                <div class="stars text-muted small">★★★★★</div>
+                                <h5 class="fw-bold mt-2">$192.00</h5>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-indicators position-relative mt-5">
+                <button type="button" data-bs-target="#productSlider" data-bs-slide-to="0" class="active dot"></button>
+                <button type="button" data-bs-target="#productSlider" data-bs-slide-to="1" class="dot"></button>
+                <button type="button" data-bs-target="#productSlider" data-bs-slide-to="2" class="dot"></button>
+            </div>
+        </div>
+    </div>
+    <!-- recently viewed products -->
+    <section class="product-section container mt-5">
+        <h2 class="fw-bold text-center mb-4">RECENTLY VIEWED PRODUCTS</h2>
+
+        <div class="swiper productSlider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming1.webp" alt="product">
+                            <div class="hover-icons">
+                                <span class="wishlist-btn"><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+                        </div>
+                        <h6>PG4 Console Zephyr</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$211.00</h5>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming2.webp" alt="product">
+                            <div class="hover-icons">
+                                <span class="wishlist-btn"><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+                        </div>
+                        <h6>PG2 Console Pro</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$237.00</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming1.webp" alt="product">
+                            <div class="hover-icons">
+                                <span class="wishlist-btn"><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+                        </div>
+                        <h6>PG4 Console Zephyr</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$211.00</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming1.webp" alt="product">
+                            <div class="hover-icons">
+                                <span class="wishlist-btn"><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+                        </div>
+                        <h6>PG4 Console Zephyr</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$211.00</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination mt-4"></div>
+        </div>
+    </section>
+
+
+    </div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="layout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="product-details.js"></script>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>

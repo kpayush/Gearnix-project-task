@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Glide - Product Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="product-thumb.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+</head>
+
+<body>
+<div id="header"></div>
+    <div class="container mt-5 mb-lg-4">
+        <div class="row">
+         <div class="col-md-6">
+
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb small text-uppercase">
+            <li class="breadcrumb-item">
+                <a href="#" class="text-decoration-none text-dark">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Aurora Sentinel</li>
+        </ol>
+    </nav>
+
+    <div class="row">
+
+    <!-- Thumbnails LEFT -->
+    <div class="col-2 d-flex flex-column gap-2">
+        <img src="images/key1.png" class="img-thumbnail thumb active" data-bs-target="#productCarousel" data-bs-slide-to="0">
+        <img src="images/key2.png" class="img-thumbnail thumb" data-bs-target="#productCarousel" data-bs-slide-to="1">
+        <img src="images/key3.png" class="img-thumbnail thumb" data-bs-target="#productCarousel" data-bs-slide-to="2">
+        <img src="images/key4.webp" class="img-thumbnail thumb" data-bs-target="#productCarousel" data-bs-slide-to="3">
+        <img src="images/key5.webp" class="img-thumbnail thumb" data-bs-target="#productCarousel" data-bs-slide-to="4">
+        <img src="images/key6.webp" class="img-thumbnail thumb" data-bs-target="#productCarousel" data-bs-slide-to="5">
+    </div>
+
+    <!-- Main Carousel RIGHT -->
+    <div class="col-10">
+
+        <div id="productCarousel" class="carousel slide">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="images/key1.png" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/key2.png" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/key3.png" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/key4.webp" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/key5.webp" class="d-block w-100">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/key6.webp" class="d-block w-100">
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+            <div class="col-md-6 ps-md-5">
+
+
+                <h1 class="fw-bold h2">Galaxy Striker</h1>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="text-muted small me-2">
+                        <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                            class="far fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <span class="text-muted x-small" style="font-size: 12px; letter-spacing: 1px;">VIEW ALL
+                        REVIEWS</span>
+                </div>
+
+                <h2 class="fw-bold mb-3">$211.00</h2>
+
+                <p class="text-muted small mb-4" style="line-height: 1.6;">
+                    IronCaptivate with this shirt's versatile urban look that works as well at happy hour as it does in
+                    the back yard. The real mother of pearl buttons and embroidered crocodile complete its elegant
+                    appeal Lorem ipsum...
+                </p>
+
+                <div class="product-meta border-bottom pb-3 mb-4">
+                    <div class="row mb-1">
+                        <div class="col-3 text-uppercase fw-bold small">Tags:</div>
+                        <div class="col-9 text-muted small">Gaming, Mechanical, Wire</div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-3 text-uppercase fw-bold small">Sku:</div>
+                        <div class="col-9 text-muted small">e-1234</div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="col-3 text-uppercase fw-bold small">Category:</div>
+                        <div class="col-9 text-muted small text-decoration-underline">Accessories, Gaming controllers,
+                            Keyboards, Mouse, Wire headphone, Wire mouse, Wireless headset, Wireless mouse</div>
+                    </div>
+                </div>
+
+                <div class="fw-bold small text-uppercase mb-2">Quantity:</div>
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <div class="input-group border" style="width: 120px;">
+                        <button class="btn btn-sm btn-light border-0" onclick="updateQty(-1)">-</button>
+                        <input type="text" id="qty" class="form-control form-control-sm text-center border-0" value="1">
+                        <button class="btn btn-sm btn-light border-0" onclick="updateQty(1)">+</button>
+                    </div>
+                    <button class="btn btn-dark flex-grow-1 text-uppercase fw-bold py-2" style="font-size: 13px;">Add to
+                        Bag</button>
+                    <button class="btn btn-outline-dark rounded-circle d-flex align-items-center justify-content-center"
+                        style="width: 42px; height: 42px;">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <button class="btn btn-primary w-100 fw-bold py-2 text-uppercase mb-4"
+                    style="background-color: #000; border: none;">Buy it now</button>
+
+                <div class="d-flex gap-4 border-bottom pb-4 mb-4">
+                    <a href="#" class="text-decoration-none text-dark small fw-bold"><i
+                            class="fas fa-share-alt me-2"></i> SHARE</a>
+                    <a href="#" class="text-decoration-none text-dark small fw-bold"><i
+                            class="far fa-question-circle me-2"></i> ASK A QUESTION</a>
+                    <a href="faqs.html" class="text-decoration-none text-dark small fw-bold"><i
+                            class="fas fa-info-circle me-2"></i> FAQ</a>
+                </div>
+
+                <div class="text-center p-3 border rounded">
+                    <p class="small fw-bold text-uppercase mb-3">Guaranteed Safe Checkout:</p>
+                    <div class="d-flex justify-content-center gap-2 flex-wrap">
+
+                        <img src="images/payment1.png" alt="Apple Pay">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5 border-top pt-4">
+            <ul class="nav nav-tabs border-0 justify-content-start" id="myTab">
+                <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab"
+                        data-bs-target="#desc">Description</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#delivery">Delivery
+                        Policy</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#returns">Shipping &
+                        Return</button></li>
+                <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#custom">Custom
+                        Tab</button></li>
+            </ul>
+            <div class="tab-content p-3 border">
+                <div class="tab-pane fade show active" id="desc">
+                    <p class="text-muted small mb-4" style="line-height: 1.6;">
+                        IronCaptivate with this shirt’s versatile urban look that works as well at happy hour as it does
+                        in the back yard. The real mother of pearl buttons and embroidered crocodile complete its
+                        elegant appeal.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                        eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridicu lus mus. Donec quam felis, ultri cies nec, pellentesque eu, pretium quis, sem. Nulla
+                        consequat massa quis enim.
+                    </p>
+                    <h5 class="text-muted  mt-2 fw-bold" style="color: #000;">Sample Ordered Lista</h5>
+                    <ul class="list-group list-group-numbered mt-2">
+                        <li>Comodous in tempor ullamcorper miaculis</li>
+                        <li>Pellentesque vitae neque mollis urna mattis laoreet.</li>
+                        <li>Divamus sit amet purus justo.</li>
+                        <li>Proin molestie egestas orci ac suscipit risus posuere loremous
+                        </li>
+                    </ul>
+
+                    <h5 class="text-muted  mt-2 fw-bold" style="color: #000;">Sample Paragraph Text</h5>
+                    <p>Faded short sleeves t-shirt with high neckline. Soft and stretchy material for a comfortable fit.
+                        Accessorize with a straw hat and you're ready for summer!Faded short sleeves t-shirt with high
+                        neckline. Soft and stretchy material for a comfortable fit. Accessorize with a straw hat and
+                        you're ready for summe!Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                        montes, nascetur ridicu lus mus. Donec quam felis, ultri cies nec, pellentesque eu, pretium
+                        quis, sem. Nulla consequat massa quis enim.
+
+                    </p>
+
+
+                </div>
+                <div class="tab-pane fade" id="delivery">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                    vulputate, lectus ac pretium maximus, magna neque fermentum arcu, ut pulvinar arcu erat vel massa.
+                    Pellentesque ac arcu blandit, vestibulum tortor eget, dictum magna. Curabitur sit amet metus nulla.
+                    Pellentesque et augue et urna volutpat vestibulum vitae eget ligula. Maecenas mi augue, faucibus
+                    scelerisque facilisis in, dignissim vitae justo. Sed venenatis lectus et leo malesuada iaculis. Nunc
+                    lacinia arcu id elementum rhoncus. Duis tempor, enim vel vulputate interdum, magna sapien lacinia
+                    enim, nec lobortis quam enim eu erat. Aenean faucibus ex vitae nibh accumsan ullamcorper. Sed a orci
+                    augue. Maecenas porttitor venenatis semper.</div>
+                <div class="tab-pane fade" id="returns">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus libero quis mauris vestibulum
+                    dapibus.
+
+                    Maecenas ullamcorper erat mi, vel consequat enim suscipit at. Pellentesque a elit at elit
+                </div>
+                <div class="tab-pane fade" id="custom">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+
+                                <th scope="col">Lorem ipsum dolor sit amet.</th>
+                                <th scope="col">Lorem ipsum dolor sit amet consectetur.</th>
+
+                            </tr>
+                            <tr>
+                                <th scope="col">Lorem ipsum dolor sit amet.</th>
+                                <th scope="col">Lorem ipsum dolor sit amet consectetur.</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Quisque in felis ut tellus</th>
+                                <th scope="col">Pellentesque a elit at elit auctor tempus sed vitae mi</th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Morbi blandit auctor
+                                </th>
+                                <th scope="col">Vestibulum sollicitudin tortor dui, quis aliquet sapien convallis sed..
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="col">Sed sit amet risus quis velit lacinia gravida.
+                                </th>
+                                <th scope="col">Aenean interdum elementum arcu. Vivamus purus lorem, semper quis libero
+                                    et.</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--  -feature Section -->
+    <section class="feature-section">
+
+        <div class="row spacing-30">
+
+            <div
+                class="nov-policy-item col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 bg-icon mb-lg-50 show-icon-shadow icon_animate">
+
+
+                <div
+                    class="policy__item--content style2 h-100 block-1 d-flex d-md-block d-lg-flex align-items-center text-left text-md-center text-lg-left">
+
+                    <div class="policy-icon d-inline-flex align-items-center justify-content-center position-relative">
+                        <img src="images/feature1.png" class="ls-is-cached lazyloaded" alt="icon_policy">
+                    </div>
+
+                    <div class="heading--policy position-relative mt-md-20 mt-sm-0">
+
+                        <div class="title-policy f_df font-500">Free Shipping</div>
+
+
+                        <div class="desc-policy mt-15">Free Shipping to Make Your Shopping Experience Seamless.
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div
+                class="nov-policy-item col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 bg-icon show-icon-shadow icon_animate">
+
+
+                <div
+                    class="policy__item--content style2 h-100 block-4 d-flex d-md-block d-lg-flex align-items-center text-left text-md-center text-lg-left">
+
+                    <div class="policy-icon d-inline-flex align-items-center justify-content-center position-relative">
+                        <img src="images/feature4.png" class="ls-is-cached lazyloaded" alt="icon_policy">
+                    </div>
+
+                    <div class="heading--policy position-relative mt-md-20 mt-sm-0">
+
+                        <div class="title-policy f_df font-500">Support 24/7</div>
+                        <div class="desc-policy mt-15">Unparalleled Support, Tailored to Your Needs 24 Hours a Day.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div
+                class="nov-policy-item col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 bg-icon mb-lg-50 show-icon-shadow icon_animate">
+
+
+                <div
+                    class="policy__item--content style2 h-100 block-2 d-flex d-md-block d-lg-flex align-items-center text-left text-md-center text-lg-left">
+
+                    <div class="policy-icon d-inline-flex align-items-center justify-content-center position-relative">
+                        <img src="images/feature2.png" class="ls-is-cached lazyloaded" alt="icon_policy">
+                    </div>
+
+                    <div class="heading--policy position-relative mt-md-20 mt-sm-0">
+
+                        <div class="title-policy f_df font-500">Return Policy</div>
+
+
+                        <div class="desc-policy mt-15">Flexible Returns to Ensure a Positive Shopping Experience.
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- REVIEW SECTION -->
+    <section class="review-section container my-5">
+
+        <div class="row g-4">
+
+            <!-- LEFT REVIEW CARD -->
+            <div class="col-lg-4 col-md-5">
+
+                <div class="review-card p-4">
+
+                    <h5 class="mb-3">Reviews</h5>
+
+                    <!-- Rating Summary -->
+                    <div class="rating-summary d-flex align-items-center mb-4">
+                        <span class="star me-2"><i class="bi bi-star-fill"></i></span>
+                        <h2 class="mb-0 me-3">0.0</h2>
+                        <span class="text-muted">0 reviews</span>
+                    </div>
+
+                    <!-- Rating Bars -->
+                    <div class="rating-bars">
+
+                        <div class="rating-row">
+                            <span>5</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>4</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>3</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>2</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span>1</span>
+                            <div class="progress">
+                                <div class="progress-bar"></div>
+                            </div>
+                            <span>0</span>
+                        </div>
+
+                    </div>
+
+                    <!-- Click Review -->
+                    <div class="click-review text-center mt-4">
+                        <p class="mb-2">Click to review</p>
+                        <div class="review-stars">
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT REVIEW MESSAGE -->
+
+            <div class="col-lg-8 col-md-7">
+
+                <div class="no-review-box d-flex align-items-center justify-content-center">
+                    No reviews yet, lead the way and share your thoughts
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- product section  -->
+
+    <section class="product-section mt-lg-4 mb-4 container">
+
+        <h2 class="fw-bold text-center mb-4">PRODUCT RELATED</h2>
+
+        <div class="swiper productSlider">
+
+            <div class="swiper-wrapper">
+
+                <!-- PRODUCT 1 -->
+                <div class="swiper-slide">
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/key1.png">
+
+                            <div class="hover-icons">
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+
+                        </div>
+
+                        <h6>PG4 Console Zephyr</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$211.00</h5>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+                <div class="swiper-slide">
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/key6.webp">
+
+                            <div class="hover-icons">
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+
+                        </div>
+
+                        <h6>PG2 Console Pro Nexus</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$237.00</h5>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+                <div class="swiper-slide">
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/key3.webp">
+
+                            <div class="hover-icons">
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+
+                        </div>
+
+                        <h6>Boxer 6 Gaming</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$310.00</h5>
+
+                    </div>
+
+                </div>
+
+                <!-- product 4 -->
+                <div class="swiper-slide">
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming3.webp">
+
+                            <div class="hover-icons">
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+
+                        </div>
+
+                        <h6>Boxer 6 Gaming</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$310.00</h5>
+
+                    </div>
+
+                </div>
+                <!-- product 5 -->
+                <div class="swiper-slide">
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming3.webp">
+
+                            <div class="hover-icons">
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+
+                        </div>
+
+                        <h6>Boxer 6 Gaming</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$310.00</h5>
+
+                    </div>
+
+                </div>
+
+                <!-- product 6  -->
+                <div class="swiper-slide">
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming3.webp">
+
+                            <div class="hover-icons">
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+
+                        </div>
+
+                        <h6>Boxer 6 Gaming</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$310.00</h5>
+
+                    </div>
+
+                </div>
+                <!-- product 7  -->
+                <div class="swiper-slide">
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming3.webp">
+
+                            <div class="hover-icons">
+                                <span><i class="bi bi-star"></i></span>
+                                <span><i class="bi bi-cart"></i></span>
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+
+                        </div>
+
+                        <h6>Boxer 6 Gaming</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$310.00</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- recently view product -->
+    <section class="product-section mt-lg-5 mb-4 container">
+
+        <h2 class="fw-bold text-center mb-4">RECENTLY VIEWED PRODUCTS</h2>
+
+        <div class="swiper productSlider">
+
+            <div class="swiper-wrapper">
+
+                <!-- PRODUCT 1 -->
+                <div class="swiper-slide">
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming1.webp">
+
+                            <div class="hover-icons">
+                                <span><i class="bi bi-star"></i></span>
+
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+
+                        </div>
+
+                        <h6>PG4 Console Zephyr</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$211.00</h5>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+                <div class="swiper-slide">
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming2.webp">
+
+                            <div class="hover-icons">
+                                <span><i class="bi bi-star"></i></span>
+
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+
+                        </div>
+
+                        <h6>PG2 Console Pro Nexus</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$237.00</h5>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+                <div class="swiper-slide">
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming3.webp">
+
+                            <div class="hover-icons">
+                                <span><i class="bi bi-star"></i></span>
+
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+
+                        </div>
+
+                        <h6>Boxer 6 Gaming</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$310.00</h5>
+
+                    </div>
+
+                </div>
+
+                <!-- product 4 -->
+                <div class="swiper-slide">
+
+                    <div class="product-card">
+                        <div class="img-box">
+                            <img src="images/gaming3.webp">
+
+                            <div class="hover-icons">
+                                <span><i class="bi bi-star"></i></span>
+
+                                <span><i class="bi bi-eye"></i></span>
+                            </div>
+
+                        </div>
+
+                        <h6>Boxer 6 Gaming</h6>
+                        <div class="stars">★★★★★</div>
+                        <h5>$310.00</h5>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="product-details.js"></script>
+    <script src="layout.js"></script>
+    <script>
+        const carousel = document.querySelector('#productCarousel');
+const thumbs = document.querySelectorAll('.thumb');
+
+carousel.addEventListener('slid.bs.carousel', function (e) {
+
+    thumbs.forEach(t => t.classList.remove('active'));
+
+    thumbs[e.to].classList.add('active');
+
+});
+    </script>
+</body>
+
+</html>

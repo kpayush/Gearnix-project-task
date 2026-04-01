@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+    padding: 0;
+   background: #f8f9fb;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+/* Body aur Main Container ko screen ke andar rakhne ke liye */
+html, body {
+    overflow-x: hidden; /* Horizontal scroll puri tarah band karne ke liye */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* Accessories banner */
+.Accessories-class {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Accessories-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    color: #666;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+/* flash deal banner */
+
+.flash-banner {
+  height: 320px;
+  background: 
+    linear-gradient(90deg, rgba(255,140,0,0.85), rgba(255,200,50,0.85)),
+    url('https://images.unsplash.com/photo-1602526432604-029a709e1318');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  color: #111;
+}
+
+.timer-box {
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 5px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.timer-box small {
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* product card grid  */
+/* Active icon */
+.view-icons span {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.view-icons .active {
+    color: #ff4bd8;
+}
+
+.class-headphones{
+    text-align: center;
+    justify-content: center;
+}
+.product-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.product-card h6 {
+    margin-top: 15px;
+}
+
+.stars {
+    color: #ccc;
+    font-size: 18px;
+}
+
+.product-card h5 {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+/* View Icons */
+.view-icons {
+    font-size: 20px;
+    letter-spacing: 6px;
+    cursor: pointer;
+}
+.img-box{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+/* ICON CONTAINER */
+.hover-icons{
+    position: absolute;
+    top: 15px;
+    right: -60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s ease;
+}
+
+/* ICON STYLE */
+.hover-icons span{
+    width: 42px;
+    height: 42px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(0,0,0,.15);
+    transition: 0.3s;
+}
+
+.hover-icons span:hover{
+    background: #000;
+    color: #fff;
+}
+
+/* SHOW ICONS ON HOVER */
+.product-card:hover .hover-icons{
+    right: 15px;
+}
+/* progress bar  */
+.sale-progress{
+margin-top:10px;
+}
+
+/* bar background */
+.progress{
+height:6px;
+background:#e5e5e5;
+border-radius:10px;
+overflow:hidden;
+}
+
+/* colored bar */
+.progress-bar{
+height:100%;
+background:linear-gradient(90deg,#ffb300,#ff3d00);
+border-radius:10px;
+}
+
+/* text info */
+.sale-info{
+display:flex;
+justify-content:space-between;
+font-size:14px;
+margin-top:6px;
+color:#555;
+}
+
+
+/* Accessories button and text content section */
+.accessories-info{
+  background:#f7f7f7;
+}
+
+/* TAG BUTTON */
+
+.tag-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.tag-btn{
+  padding:10px 24px;
+  border:1px solid #ccc;
+  background:#fff;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:14px;
+  transition:.3s;
+}
+
+.tag-btn:hover,
+.tag-btn.active{
+  background:#111;
+  color:#fff;
+  border-color:#111;
+}
+
+/* HEADING */
+
+.accessories-title{
+  font-size:30px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+/* TEXT */
+
+.accessories-text p{
+  color:#555;
+  line-height:1.7;
+}
+
+/* SEE MORE SYSTEM */
+
+.more-text{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height .6s ease;
+}
+
+.more-text.show{
+  max-height:500px;
+}
+
+.see-more-btn{
+  background:none;
+  border:none;
+  margin-top:15px;
+  font-weight:600;
+  letter-spacing:1px;
+  cursor:pointer;
+  color:#111;
+}
+
+.see-more-btn:hover{
+  color:#ff4fd8;
+}
+
+/* ==========feature section========== */
+.spacing-30{
+  margin-top:30px;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+.feature-section{
+    background:#faf9f9;
+    padding:50px 30px;
+    border-radius:20px;
+    
+}
+
+/* Hide description & button in grid */
+.product-desc,
+.add-to-cart-btn {
+    display: none;
+}
+
+/* LIST VIEW STYLE */
+.list-view .product-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.list-view .img-box {
+    width: 220px;
+}
+
+.list-view .product-desc,
+.list-view .add-to-cart-btn {
+    display: block;
+}
+
+.add-to-cart-btn {
+    background: #ff4bd8;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+/* viewd product  */
+.recent-section{
+  padding: 70px 0;
+  text-align: center;
+  background:#fff;
+}
+
+.title{
+  font-weight:700;
+  margin-bottom:40px;
+}
+
+.slider-wrapper{
+  width:100%;
+  overflow:hidden;
+}
+
+.slider-track{
+  display:flex;
+  gap:25px;
+  animation: scroll 18s linear infinite;
+}
+
+.slider-wrapper:hover .slider-track{
+  animation-play-state: paused;
+}
+
+/* Card */
+.slide-card{
+  min-width:350px;
+  background:#fff;
+  padding:25px;
+  border-radius:18px;
+  box-shadow:0 5px 18px rgba(0,0,0,.05);
+  transition:.3s;
+}
+
+.slide-card:hover{
+  transform:translateY(-5px);
+}
+
+.slide-card img{
+  width:100%;
+  height:180px;
+  object-fit:contain;
+}
+
+.slide-card h6{
+  margin-top:15px;
+  font-size:15px;
+}
+
+.slide-card h5{
+  font-weight:700;
+  margin-top:5px;
+}
+
+/* Badge */
+.badge{
+  position:absolute;
+  background:red;
+  color:#fff;
+  font-size:11px;
+  padding:4px 8px;
+  border-radius:4px;
+}
+
+/* Auto scroll animation */
+@keyframes scroll{
+  0%{ transform: translateX(0); }
+  100%{ transform: translateX(-50%); }
+}

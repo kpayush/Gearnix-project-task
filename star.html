@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f9fb;
+    
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+}
+
+
+.Accessories-class {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Accessories-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.breadcrumb {
+    color: #666;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+/* Body aur Main Container ko screen ke andar rakhne ke liye */
+html, body {
+    overflow-x: hidden; /* Horizontal scroll puri tarah band karne ke liye */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+   </style>
+</head>
+
+<body>
+
+   <div id="header"></div>
+
+    <div class="Accessories-class">
+        <h2 class="Accessories-heading">Page Wishlist</h2>
+        <h4 class="breadcrumb">Home &nbsp;.&nbsp; Page Wishlist</h4>
+    </div>
+
+    <div class="container mt-5 pt-5">
+        <div id="wishlistContainer"></div>
+    </div>
+
+<div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="layout.js"></script>
+
+</body>
+<script>
+function loadWishlist() {
+
+    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    let container = document.getElementById("wishlistContainer");
+
+    container.innerHTML = "";
+
+    if (wishlist.length === 0) {
+        
+        return;
+    }
+
+    wishlist.forEach((item, index) => {
+
+        container.innerHTML += `
+            <div class="card mb-3 p-3 d-flex flex-row align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="${item.image}" width="80">
+                    <div>
+                        <h6>${item.name}</h6>
+                        <p class="mb-0">${item.price}</p>
+                    </div>
+                </div>
+                <button class="btn btn-danger remove-btn" data-index="${index}">
+                    Remove
+                </button>
+            </div>
+        `;
+    });
+
+    // REMOVE FUNCTION
+    document.querySelectorAll(".remove-btn").forEach(btn => {
+        btn.addEventListener("click", function () {
+
+            let index = this.dataset.index;
+            wishlist.splice(index, 1);
+            localStorage.setItem("wishlist", JSON.stringify(wishlist));
+
+            loadWishlist();
+            updateWishlistCount();
+        });
+    });
+}
+
+// Navbar Count Update
+function updateWishlistCount() {
+    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+    let countElement = document.getElementById("cart-Count");
+    if (countElement) {
+        countElement.innerText = wishlist.length;
+    }
+}
+
+loadWishlist();
+updateWishlistCount();
+</script>
+</html>
